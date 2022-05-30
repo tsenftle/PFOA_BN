@@ -1,1 +1,1 @@
-
+This folder contains the calculation for simulating the PFCA oxidation reaction (i.e., CF3CF2COO-(aq) + h+ → CF3CF2•(aq) + CO2(g)) over the 6x6 hBN surface. The optimization of initial state (IS), transition state (TS), and final state (FS) of the reaction is uploaded to corresponding folders. For each reaction state, we change the total electron number in the system to change the surface charge density of the hBN.
