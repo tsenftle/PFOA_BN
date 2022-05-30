@@ -1,0 +1,143 @@
+Job started on bc10u13n4 at Wed Feb  3 05:57:24 CST 2021
+SLURM_JOBID=2461989
+SLURM_JOB_NODELIST=bc10u13n4,bc10u23n1
+ running on   48 total cores
+ distrk:  each k-point on    8 cores,    6 groups
+ distr:  one band on    1 cores,    8 groups
+ using from now: INCAR     
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Jun 11 2020 13:42:08) complex          
+  
+ POSCAR found type information on POSCAR  B  N  C  F  O 
+ POSCAR found :  5 types and      82 ions
+ scaLAPACK will be used
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|      For optimal performance we recommend to set                            |
+|        NCORE= 4 - approx SQRT( number of cores)                             |
+|      NCORE specifies how many cores store one orbital (NPAR=cpu/NCORE).     |
+|      This setting can  greatly improve the performance of VASP for DFT.     |
+|      The default,   NCORE=1            might be grossly inefficient         |
+|      on modern multi-core architectures or massively parallel machines.     |
+|      Do your own testing !!!!                                               |
+|      Unfortunately you need to use the default for GW and RPA calculations. |
+|      (for HF NCORE is supported but not extensively tested yet)             |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|      You have enabled k-point parallelism (KPAR>1).                         |
+|      This developmental code was originally  written by Paul Kent at ORNL,  |
+|      and carefully double checked in Vienna.                                |
+|      GW as well as linear response parallelism added by Martijn Marsman     |
+|      and Georg Kresse.                                                      |
+|      Carefully verify results versus KPAR=1.                                |
+|      Report problems to Paul Kent and Vienna.                               |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR found type information on POSCAR  B  N  C  F  O 
+ POSCAR found :  5 types and      82 ions
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ WAVECAR not read
+ WARNING: random wavefunctions but no delay for mixing, default for NELMDL
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:   1  -0.12478E+00    0.00000E+00   -0.12478E+00   114
+DAV:   1     0.350080051785E+04    0.35008E+04   -0.11828E+05  6104   0.976E+02
+DAV:   2     0.873420181316E+02   -0.34135E+04   -0.31172E+04  8152   0.224E+02
+DAV:   3    -0.861842460332E+03   -0.94918E+03   -0.94030E+03  6600   0.132E+02
+DAV:   4    -0.910537387532E+03   -0.48695E+02   -0.48277E+02  6352   0.376E+01
+DAV:   5    -0.911546178975E+03   -0.10088E+01   -0.10050E+01  6512   0.473E+00    0.657E+01
+SOL:   2  -0.35796E+00    0.00000E+00   -0.35796E+00   105
+RMM:   6    -0.669635708681E+03    0.24191E+03   -0.28206E+02  5120   0.280E+01    0.337E+01
+SOL:   3  -0.67960E+00    0.00000E+00   -0.67960E+00   102
+RMM:   7    -0.704268518276E+03   -0.34633E+02   -0.82703E+01  5124   0.176E+01    0.229E+01
+SOL:   4  -0.83767E+00    0.00000E+00   -0.83767E+00   101
+RMM:   8    -0.709433580328E+03   -0.51651E+01   -0.12019E+01  5121   0.885E+00    0.171E+01
+SOL:   5  -0.10267E+01    0.00000E+00   -0.10267E+01   104
+RMM:   9    -0.752126701481E+03   -0.42693E+02   -0.25178E+01  5120   0.920E+00    0.117E+01
+SOL:   6  -0.10338E+01    0.00000E+00   -0.10338E+01   101
+RMM:  10    -0.766832152687E+03   -0.14705E+02   -0.73973E+00  5125   0.450E+00    0.106E+01
+SOL:   7  -0.10048E+01    0.00000E+00   -0.10048E+01   100
+RMM:  11    -0.773823481205E+03   -0.69913E+01   -0.37721E+00  5120   0.303E+00    0.101E+01
+SOL:   8  -0.93469E+00    0.00000E+00   -0.93469E+00   101
+RMM:  12    -0.787706491220E+03   -0.13883E+02   -0.71182E+00  5120   0.461E+00    0.852E+00
+SOL:   9  -0.88194E+00    0.00000E+00   -0.88194E+00   102
+RMM:  13    -0.800384700956E+03   -0.12678E+02   -0.11979E+01  5120   0.518E+00    0.675E+00
+SOL:  10  -0.85393E+00    0.00000E+00   -0.85393E+00    99
+RMM:  14    -0.801193947529E+03   -0.80925E+00   -0.30216E+00  5120   0.315E+00    0.496E+00
+SOL:  11  -0.76542E+00    0.00000E+00   -0.76542E+00   100
+RMM:  15    -0.798787400320E+03    0.24065E+01   -0.13033E+00  5125   0.232E+00    0.366E+00
+SOL:  12  -0.59518E+00    0.00000E+00   -0.59518E+00   101
+RMM:  16    -0.793801603421E+03    0.49858E+01   -0.14704E+00  5120   0.233E+00    0.417E+00
+SOL:  13  -0.58067E+00    0.00000E+00   -0.58067E+00    94
+RMM:  17    -0.791392093204E+03    0.24095E+01   -0.29369E-01  5120   0.140E+00    0.303E+00
+SOL:  14  -0.57161E+00    0.00000E+00   -0.57161E+00    97
+RMM:  18    -0.788188955525E+03    0.32031E+01   -0.31092E-01  5120   0.102E+00    0.233E+00
+SOL:  15  -0.53504E+00    0.00000E+00   -0.53504E+00    95
+RMM:  19    -0.784950577759E+03    0.32384E+01   -0.16817E-01  5120   0.105E+00    0.190E+00
+SOL:  16  -0.51502E+00    0.00000E+00   -0.51502E+00    93
+RMM:  20    -0.783210970219E+03    0.17396E+01   -0.69424E-02  5170   0.658E-01    0.117E+00
+SOL:  17  -0.49792E+00    0.00000E+00   -0.49792E+00    95
+RMM:  21    -0.781567833631E+03    0.16431E+01   -0.90922E-02  5485   0.800E-01    0.908E-01
+SOL:  18  -0.49468E+00    0.00000E+00   -0.49468E+00    94
+RMM:  22    -0.780474971047E+03    0.10929E+01   -0.64064E-02  5530   0.750E-01    0.641E-01
+SOL:  19  -0.48332E+00    0.00000E+00   -0.48332E+00    89
+RMM:  23    -0.779737902383E+03    0.73707E+00   -0.53725E-02  7039   0.706E-01    0.386E-01
+SOL:  20  -0.47182E+00    0.00000E+00   -0.47182E+00    89
+RMM:  24    -0.779152955177E+03    0.58495E+00   -0.77225E-02  5848   0.101E+00    0.322E-01
+SOL:  21  -0.46823E+00    0.00000E+00   -0.46823E+00    86
+RMM:  25    -0.778979130072E+03    0.17383E+00   -0.51015E-02  5151   0.992E-01    0.191E-01
+SOL:  22  -0.46361E+00    0.00000E+00   -0.46361E+00    86
+RMM:  26    -0.778968302559E+03    0.10828E-01   -0.10091E-02  5125   0.396E-01    0.483E-02
+SOL:  23  -0.46059E+00    0.00000E+00   -0.46059E+00    87
+RMM:  27    -0.778963950734E+03    0.43518E-02   -0.35613E-03  5120   0.225E-01    0.102E-01
+SOL:  24  -0.46023E+00    0.00000E+00   -0.46023E+00    82
+RMM:  28    -0.778964989079E+03   -0.10383E-02   -0.92391E-04  5120   0.102E-01    0.154E-02
+SOL:  25  -0.45980E+00    0.00000E+00   -0.45980E+00    80
+RMM:  29    -0.778965052121E+03   -0.63042E-04   -0.41420E-04  5120   0.633E-02    0.168E-02
+SOL:  26  -0.45962E+00    0.00000E+00   -0.45962E+00    78
+RMM:  30    -0.778965491024E+03   -0.43890E-03   -0.17682E-04  4516   0.458E-02    0.161E-02
+SOL:  27  -0.45974E+00    0.00000E+00   -0.45974E+00    74
+RMM:  31    -0.778965725892E+03   -0.23487E-03   -0.10656E-04  4046   0.352E-02    0.820E-03
+SOL:  28  -0.45980E+00    0.00000E+00   -0.45980E+00    72
+RMM:  32    -0.778965925008E+03   -0.19912E-03   -0.76436E-05  4045   0.311E-02    0.529E-03
+SOL:  29  -0.45991E+00    0.00000E+00   -0.45991E+00    70
+RMM:  33    -0.778966041085E+03   -0.11608E-03   -0.62127E-05  4035   0.276E-02    0.412E-03
+SOL:  30  -0.46001E+00    0.00000E+00   -0.46001E+00    69
+RMM:  34    -0.778966083762E+03   -0.42678E-04   -0.47835E-05  3999   0.240E-02    0.303E-03
+SOL:  31  -0.46008E+00    0.00000E+00   -0.46008E+00    65
+RMM:  35    -0.778966139073E+03   -0.55311E-04   -0.33817E-05  3962   0.204E-02    0.272E-03
+SOL:  32  -0.46014E+00    0.00000E+00   -0.46014E+00    65
+RMM:  36    -0.778966115465E+03    0.23608E-04   -0.26490E-05  3960   0.175E-02    0.224E-03
+SOL:  33  -0.46019E+00    0.00000E+00   -0.46019E+00    66
+RMM:  37    -0.778966136812E+03   -0.21347E-04   -0.25348E-05  3960   0.172E-02    0.208E-03
+SOL:  34  -0.46024E+00    0.00000E+00   -0.46024E+00    64
+RMM:  38    -0.778966181055E+03   -0.44242E-04   -0.22343E-05  3954   0.161E-02    0.158E-03
+SOL:  35  -0.46026E+00    0.00000E+00   -0.46026E+00    62
+RMM:  39    -0.778966178075E+03    0.29794E-05   -0.19645E-05  3933   0.152E-02
+SOL:  36  -0.46028E+00    0.00000E+00   -0.46028E+00    60
+   1 F= -.77896618E+03 E0= -.77895861E+03  d E =-.778966E+03  mag=     0.8259
+quench:  g(F)=  0.000E+00 g(S)=  0.000E+00 dE (1.order)= 0.000E+00
+ reached required accuracy - stopping structural energy minimisation
+ writing wavefunctions
+Job finished on bc10u13n4 at Wed Feb  3 08:09:32 CST 2021

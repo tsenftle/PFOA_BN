@@ -1,0 +1,67 @@
+SYSTEM = hBN
+
+#startup options
+ISTART   = 1        ! job: 0-new, 1-cont, 2-samecut
+ICHARG   = 0        ! charge: 1-file, 2-atom, 3-const
+INIWAV   = 1        ! wfn: 0-lowe, 1-rand
+
+#electronic relaxation
+NELM     = 100      ! Maximum number of SCF iterations
+ALGO     = fast     ! SCF algorithm
+ISPIN    = 2        ! spin polarization: 1-no spin polarization, 2-spin polarization
+EDIFF    = 1E-05    ! energy difference cutoff
+ISMEAR   = 0        ! smearing method: 0-gaussian, -5->tetrahedral method, 2-MP method (2nd order)
+SIGMA    = 0.05     ! smearing width
+PREC     = normal 
+ENCUT    = 550      ! Kinetic Energy cut-off (determined by convergence study)
+LREAL    = auto     ! Real space projection
+KPAR     = 6
+ISYM     = 0
+
+#SCAN functional
+METAGGA  = SCAN
+LASPH    = .T.
+
+#output options
+LWAVE    = .T.   ! Write the wavecar file?
+LCHARG   = .F.   ! Write the chgcar file?
+LAECHG   = .FALSE.   ! Write atomic core charge file?
+LVHAR = .FALSE.      ! Write Hartree potential
+
+#Solvation
+LSOL     = .T.
+EB_K     = 78.4
+LAMBDA_D_K = 3.04
+TAU      = 0
+
+#dos options
+NEDOS    = 1200
+LORBIT   = 11
+EMIN     = -10
+EMAX     = 5
+
+#ionic relaxation options
+EDIFFG    = -0.05    ! if negative, relax until forces are below this value (in eV/A)
+IBRION    = 3        ! -1 freeze; 0 AIMD, 1 quasi-Newton, 2 CG method, 3 damp MD
+NSW       = 500      ! Number of relaxation steps
+ISIF      = 2        ! if relaxation, allows the all to relax
+POTIM     = 0.0      ! default is 0.5, scaling factor for forces
+
+#Dimer Settings 
+IOPT   = 2
+ICHAIN = 2
+DdR       = 5E-3
+DRotMax   = 4
+DFNMax    = 1.0
+DFNMin    = 0.01
+
+#Parallelization
+#LPLANE = .TRUE.
+#NPAR = 4
+#LSCALU = .FALSE.
+#NSIM   = 4
+
+#Dipole
+#IDIPOL = 3
+#LDIPOL = .TRUE.
+#DIPOL = 0.25 0.25 0.25
