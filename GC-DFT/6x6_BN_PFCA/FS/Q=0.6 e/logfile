@@ -1,0 +1,365 @@
+Job started on bc12u11n2 at Thu Oct 15 07:06:31 CDT 2020
+ running on   96 total cores
+ distrk:  each k-point on   24 cores,    4 groups
+ distr:  one band on    1 cores,   24 groups
+ using from now: INCAR     
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build May 01 2020 14:57:12) complex          
+  
+ POSCAR found type information on POSCAR  B  N  C  F  O 
+ POSCAR found :  5 types and      82 ions
+ scaLAPACK will be used
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|      For optimal performance we recommend to set                            |
+|        NCORE= 4 - approx SQRT( number of cores)                             |
+|      NCORE specifies how many cores store one orbital (NPAR=cpu/NCORE).     |
+|      This setting can  greatly improve the performance of VASP for DFT.     |
+|      The default,   NCORE=1            might be grossly inefficient         |
+|      on modern multi-core architectures or massively parallel machines.     |
+|      Do your own testing !!!!                                               |
+|      Unfortunately you need to use the default for GW and RPA calculations. |
+|      (for HF NCORE is supported but not extensively tested yet)             |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|      You have enabled k-point parallelism (KPAR>1).                         |
+|      This developmental code was originally  written by Paul Kent at ORNL,  |
+|      and carefully double checked in Vienna.                                |
+|      GW as well as linear response parallelism added by Martijn Marsman     |
+|      and Georg Kresse.                                                      |
+|      Carefully verify results versus KPAR=1.                                |
+|      Report problems to Paul Kent and Vienna.                               |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+ LDA part: xc-table for Pade appr. of Perdew
+ found WAVECAR, reading the header
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ reading WAVECAR
+ the WAVECAR file was read successfully
+ initial charge from wavefunction
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:   1  -0.47583E+00    0.00000E+00   -0.47583E+00   113
+  FERMI_SHIFT =   0.216339882169670     
+BRMIX: very serious problems
+ the old and the new charge density differ
+BRMIX: very serious problems
+ the old and the new charge density differ
+DAV:   1    -0.776038732893E+03   -0.77604E+03   -0.14149E-05  5352   0.104E-02BRMIX: very serious problems
+ the old and the new charge density differ
+ old charge density:   347.00000 new  346.40000
+BRMIX: very serious problems
+ the old and the new charge density differ
+ old charge density:   347.00000 new  346.40000
+ old charge density:   347.00000 new  346.40000
+ old charge density:   347.00000 new  346.40000
+    0.627E-01
+SOL:   2   0.14797E+00    0.00000E+00    0.14797E+00    93
+  FERMI_SHIFT =   0.216295156782734     
+RMM:   2    -0.775992073960E+03    0.46659E-01   -0.44296E-02  5280   0.347E-01    0.290E-01
+SOL:   3   0.12485E+00    0.00000E+00    0.12485E+00    91
+  FERMI_SHIFT =   0.216300810495330     
+RMM:   3    -0.775980695002E+03    0.11379E-01   -0.90822E-03  5280   0.192E-01    0.204E-01
+SOL:   4   0.61390E-04    0.00000E+00    0.61390E-04    95
+  FERMI_SHIFT =   0.216389196263219     
+RMM:   4    -0.775968061507E+03    0.12633E-01   -0.19986E-02  5280   0.232E-01    0.145E-01
+SOL:   5  -0.82897E-01    0.00000E+00   -0.82897E-01    89
+  FERMI_SHIFT =   0.216321144584463     
+RMM:   5    -0.775970460175E+03   -0.23987E-02   -0.49219E-03  5280   0.870E-02    0.881E-02
+SOL:   6  -0.26133E+00    0.00000E+00   -0.26133E+00    91
+  FERMI_SHIFT =   0.216336184861427     
+RMM:   6    -0.775969810280E+03    0.64989E-03   -0.72661E-03  5280   0.111E-01    0.482E-02
+SOL:   7  -0.27447E+00    0.00000E+00   -0.27447E+00    83
+  FERMI_SHIFT =   0.216336514494104     
+RMM:   7    -0.775971449274E+03   -0.16390E-02   -0.63110E-04  5280   0.524E-02    0.386E-02
+SOL:   8  -0.28959E+00    0.00000E+00   -0.28959E+00    87
+  FERMI_SHIFT =   0.216336884193276     
+RMM:   8    -0.775973791266E+03   -0.23420E-02   -0.65379E-04  5280   0.544E-02    0.283E-02
+SOL:   9  -0.29319E+00    0.00000E+00   -0.29319E+00    82
+  FERMI_SHIFT =   0.216370644013387     
+RMM:   9    -0.775974423159E+03   -0.63189E-03   -0.14513E-04  5251   0.269E-02    0.111E-02
+SOL:  10  -0.29441E+00    0.00000E+00   -0.29441E+00    78
+  FERMI_SHIFT =   0.216337194711737     
+RMM:  10    -0.775975191351E+03   -0.76819E-03   -0.99458E-05  5215   0.214E-02    0.158E-02
+SOL:  11  -0.29484E+00    0.00000E+00   -0.29484E+00    77
+  FERMI_SHIFT =   0.216341505566274     
+RMM:  11    -0.775975857684E+03   -0.66633E-03   -0.65794E-05  4130   0.174E-02    0.402E-03
+SOL:  12  -0.29489E+00    0.00000E+00   -0.29489E+00    73
+  FERMI_SHIFT =   0.216337489269242     
+RMM:  12    -0.775976169374E+03   -0.31169E-03   -0.32070E-05  4062   0.138E-02    0.606E-03
+SOL:  13  -0.29488E+00    0.00000E+00   -0.29488E+00    70
+  FERMI_SHIFT =   0.216370304988573     
+RMM:  13    -0.775976307324E+03   -0.13795E-03   -0.11055E-05  3620   0.107E-02    0.242E-03
+SOL:  14  -0.29492E+00    0.00000E+00   -0.29492E+00    69
+  FERMI_SHIFT =   0.216341240619150     
+RMM:  14    -0.775976399597E+03   -0.92273E-04   -0.82928E-06  3562   0.818E-03    0.181E-03
+SOL:  15  -0.29495E+00    0.00000E+00   -0.29495E+00    67
+  FERMI_SHIFT =   0.216366923800380     
+RMM:  15    -0.775976461108E+03   -0.61512E-04   -0.54680E-06  3552   0.726E-03    0.586E-04
+SOL:  16  -0.29495E+00    0.00000E+00   -0.29495E+00    64
+  FERMI_SHIFT =   0.216337914627308     
+RMM:  16    -0.775976485505E+03   -0.24397E-04   -0.45317E-06  3551   0.620E-03    0.451E-04
+SOL:  17  -0.29498E+00    0.00000E+00   -0.29498E+00    63
+  FERMI_SHIFT =   0.216340370600329     
+RMM:  17    -0.775976495968E+03   -0.10462E-04   -0.39259E-06  3545   0.598E-03    0.253E-04
+SOL:  18  -0.29500E+00    0.00000E+00   -0.29500E+00    62
+  FERMI_SHIFT =   0.216342476211933     
+RMM:  18    -0.775976501895E+03   -0.59272E-05   -0.35497E-06  3545   0.570E-03
+SOL:  19  -0.29501E+00    0.00000E+00   -0.29501E+00    59
+  FERMI_SHIFT =   0.216365769693829     
+   1 F= -.77597650E+03 E0= -.77597082E+03  d E =-.775977E+03  mag=     1.0000
+ curvature:   0.00 expect dE= 0.000E+00 dE for cont linesearch  0.000E+00
+ trial: gam= 0.00000 g(F)=  0.110E-03 g(S)=  0.000E+00 ort = 0.000E+00 (trialstep = 0.100E+01)
+ search vector abs. value=  0.110E-03
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:  20  -0.29501E+00    0.00000E+00   -0.29501E+00    79
+  FERMI_SHIFT =   0.216365659169448     
+DAV:   1    -0.775976401918E+03    0.94049E-04   -0.26926E-02  6240   0.282E-01    0.312E-02
+SOL:  21  -0.29501E+00    0.00000E+00   -0.29501E+00    74
+  FERMI_SHIFT =   0.216342080944471     
+RMM:   2    -0.775976545936E+03   -0.14402E-03   -0.81269E-04  5278   0.496E-02    0.182E-02
+SOL:  22  -0.29498E+00    0.00000E+00   -0.29498E+00    71
+  FERMI_SHIFT =   0.216365519288581     
+RMM:   3    -0.775976544953E+03    0.98282E-06   -0.23474E-05  3812   0.112E-02
+SOL:  23  -0.29490E+00    0.00000E+00   -0.29490E+00    73
+  FERMI_SHIFT =   0.216342202782696     
+   2 F= -.77597654E+03 E0= -.77597086E+03  d E =-.430582E-04  mag=     1.0000
+ trial-energy change:   -0.000043  1 .order   -0.000041   -0.000110    0.000028
+ step:   0.7973(harm=  0.7973)  dis= 0.00040  next Energy=  -775.976546 (dE=-0.439E-04)
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:  24  -0.29490E+00    0.00000E+00   -0.29490E+00    71
+  FERMI_SHIFT =   0.216342180052840     
+DAV:   1    -0.775976550338E+03   -0.44025E-05   -0.12175E-03  5760   0.614E-02    0.782E-03
+SOL:  25  -0.29486E+00    0.00000E+00   -0.29486E+00    68
+  FERMI_SHIFT =   0.216342180052830     
+RMM:   2    -0.775976554354E+03   -0.40157E-05   -0.50410E-05  3861   0.146E-02
+SOL:  26  -0.29484E+00    0.00000E+00   -0.29484E+00    64
+  FERMI_SHIFT =   0.216365391451985     
+   3 F= -.77597655E+03 E0= -.77597087E+03  d E =-.524592E-04  mag=     1.0000
+ curvature:  -0.40 expect dE=-0.636E-04 dE for cont linesearch -0.363E-06
+ trial: gam= 1.35759 g(F)=  0.160E-03 g(S)=  0.000E+00 ort = 0.100E-04 (trialstep = 0.271E+00)
+ search vector abs. value=  0.390E-03
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:  27  -0.29484E+00    0.00000E+00   -0.29484E+00    76
+  FERMI_SHIFT =   0.216365329092526     
+DAV:   1    -0.775976538792E+03    0.11546E-04   -0.72577E-03  5712   0.145E-01    0.161E-02
+SOL:  28  -0.29482E+00    0.00000E+00   -0.29482E+00    71
+  FERMI_SHIFT =   0.216342361108209     
+RMM:   2    -0.775976574095E+03   -0.35303E-04   -0.21178E-04  4530   0.263E-02    0.803E-03
+SOL:  29  -0.29480E+00    0.00000E+00   -0.29480E+00    68
+  FERMI_SHIFT =   0.216369840817081     
+RMM:   3    -0.775976579460E+03   -0.53645E-05   -0.87611E-06  3663   0.799E-03
+SOL:  30  -0.29477E+00    0.00000E+00   -0.29477E+00    70
+  FERMI_SHIFT =   0.216369757910722     
+   4 F= -.77597658E+03 E0= -.77597089E+03  d E =-.251059E-04  mag=     1.0000
+ trial-energy change:   -0.000025  1 .order   -0.000034   -0.000047   -0.000021
+ step:   0.4843(harm=  0.4843)  dis= 0.00050  next Energy=  -775.976596 (dE=-0.419E-04)
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:  31  -0.29476E+00    0.00000E+00   -0.29476E+00    74
+  FERMI_SHIFT =   0.216369707856951     
+DAV:   1    -0.775976555901E+03    0.18195E-04   -0.44156E-03  5568   0.113E-01    0.127E-02
+SOL:  32  -0.29476E+00    0.00000E+00   -0.29476E+00    70
+  FERMI_SHIFT =   0.216369641824083     
+RMM:   2    -0.775976582018E+03   -0.26117E-04   -0.12565E-04  4180   0.209E-02    0.732E-03
+SOL:  33  -0.29474E+00    0.00000E+00   -0.29474E+00    67
+  FERMI_SHIFT =   0.216338410552847     
+RMM:   3    -0.775976584509E+03   -0.24911E-05   -0.68618E-06  3593   0.737E-03
+SOL:  34  -0.29471E+00    0.00000E+00   -0.29471E+00    70
+  FERMI_SHIFT =   0.216369561475947     
+   5 F= -.77597658E+03 E0= -.77597090E+03  d E =-.301552E-04  mag=     1.0000
+ curvature:  -0.55 expect dE=-0.110E-03 dE for cont linesearch -0.368E-06
+ trial: gam= 1.14142 g(F)=  0.203E-03 g(S)=  0.000E+00 ort = 0.162E-04 (trialstep = 0.164E+00)
+ search vector abs. value=  0.748E-03
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:  35  -0.29470E+00    0.00000E+00   -0.29470E+00    74
+  FERMI_SHIFT =   0.216369508966284     
+DAV:   1    -0.775976573201E+03    0.88170E-05   -0.44736E-03  5568   0.113E-01    0.146E-02
+SOL:  36  -0.29471E+00    0.00000E+00   -0.29471E+00    71
+  FERMI_SHIFT =   0.216369387567688     
+RMM:   2    -0.775976590471E+03   -0.17270E-04   -0.14655E-04  4224   0.217E-02    0.982E-03
+SOL:  37  -0.29471E+00    0.00000E+00   -0.29471E+00    67
+  FERMI_SHIFT =   0.216369387567632     
+RMM:   3    -0.775976594202E+03   -0.37311E-05   -0.77095E-06  3615   0.768E-03
+SOL:  38  -0.29470E+00    0.00000E+00   -0.29470E+00    70
+  FERMI_SHIFT =   0.216369241374954     
+   6 F= -.77597659E+03 E0= -.77597091E+03  d E =-.969263E-05  mag=     1.0000
+ trial-energy change:   -0.000010  1 .order   -0.000020   -0.000036   -0.000005
+ step:   0.1879(harm=  0.1879)  dis= 0.00038  next Energy=  -775.976605 (dE=-0.208E-04)
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:  39  -0.29470E+00    0.00000E+00   -0.29470E+00    66
+  FERMI_SHIFT =   0.216369233623397     
+DAV:   1    -0.775976588595E+03    0.18757E-05   -0.99106E-05  5568   0.177E-02    0.350E-03
+SOL:  40  -0.29469E+00    0.00000E+00   -0.29469E+00    65
+  FERMI_SHIFT =   0.216369233623449     
+RMM:   2    -0.775976590767E+03   -0.21724E-05   -0.62249E-06  3592   0.689E-03
+SOL:  41  -0.29469E+00    0.00000E+00   -0.29469E+00    63
+  FERMI_SHIFT =   0.216338680610937     
+   7 F= -.77597659E+03 E0= -.77597091E+03  d E =-.625817E-05  mag=     1.0000
+ curvature:  -0.32 expect dE=-0.633E-04 dE for cont linesearch -0.166E-07
+ trial: gam= 1.14302 g(F)=  0.199E-03 g(S)=  0.000E+00 ort =-0.625E-05 (trialstep = 0.108E+00)
+ search vector abs. value=  0.116E-02
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:  42  -0.29468E+00    0.00000E+00   -0.29468E+00    73
+  FERMI_SHIFT =   0.216338724259412     
+DAV:   1    -0.775976588226E+03    0.36861E-06   -0.30889E-03  5568   0.929E-02    0.109E-02
+SOL:  43  -0.29469E+00    0.00000E+00   -0.29469E+00    68
+  FERMI_SHIFT =   0.216338853147093     
+RMM:   2    -0.775976594278E+03   -0.60517E-05   -0.92123E-05  3927   0.180E-02
+SOL:  44  -0.29469E+00    0.00000E+00   -0.29469E+00    65
+  FERMI_SHIFT =   0.216338853147018     
+   8 F= -.77597659E+03 E0= -.77597091E+03  d E =-.351075E-05  mag=     1.0000
+ trial-energy change:   -0.000004  1 .order   -0.000017   -0.000021   -0.000012
+ step:   0.2618(harm=  0.2618)  dis= 0.00035  next Energy=  -775.976616 (dE=-0.251E-04)
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:  45  -0.29468E+00    0.00000E+00   -0.29468E+00    75
+  FERMI_SHIFT =   0.216338914929374     
+DAV:   1    -0.775976581418E+03    0.68081E-05   -0.61736E-03  5568   0.131E-01    0.163E-02
+SOL:  46  -0.29470E+00    0.00000E+00   -0.29470E+00    70
+  FERMI_SHIFT =   0.216362365563881     
+RMM:   2    -0.775976592377E+03   -0.10959E-04   -0.18288E-04  4468   0.248E-02    0.981E-03
+SOL:  47  -0.29471E+00    0.00000E+00   -0.29471E+00    67
+  FERMI_SHIFT =   0.216345316420776     
+RMM:   3    -0.775976598080E+03   -0.57030E-05   -0.92385E-06  3659   0.837E-03
+SOL:  48  -0.29472E+00    0.00000E+00   -0.29472E+00    69
+  FERMI_SHIFT =   0.216361803871887     
+   9 F= -.77597660E+03 E0= -.77597091E+03  d E =-.731246E-05  mag=     1.0000
+ curvature:  -0.79 expect dE=-0.124E-03 dE for cont linesearch -0.713E-05
+ ZBRENT: increasing intervall
+ opt :   0.5685  next Energy=  -775.976626 (dE=-0.356E-04)
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:  49  -0.29470E+00    0.00000E+00   -0.29470E+00    78
+  FERMI_SHIFT =   0.216361694925781     
+DAV:   1    -0.775976479445E+03    0.11293E-03   -0.24502E-02  5568   0.261E-01    0.299E-02
+SOL:  50  -0.29474E+00    0.00000E+00   -0.29474E+00    72
+  FERMI_SHIFT =   0.216362256162397     
+RMM:   2    -0.775976559470E+03   -0.80025E-04   -0.69421E-04  5223   0.463E-02    0.156E-02
+SOL:  51  -0.29476E+00    0.00000E+00   -0.29476E+00    69
+  FERMI_SHIFT =   0.216344740428061     
+RMM:   3    -0.775976570252E+03   -0.10782E-04   -0.19714E-05  3813   0.105E-02    0.106E-02
+SOL:  52  -0.29480E+00    0.00000E+00   -0.29480E+00    72
+  FERMI_SHIFT =   0.216341447839455     
+RMM:   4    -0.775976552004E+03    0.18249E-04   -0.16002E-05  3789   0.105E-02    0.352E-03
+SOL:  53  -0.29482E+00    0.00000E+00   -0.29482E+00    65
+  FERMI_SHIFT =   0.216366342420851     
+RMM:   5    -0.775976559765E+03   -0.77614E-05   -0.65756E-06  3597   0.750E-03
+SOL:  54  -0.29483E+00    0.00000E+00   -0.29483E+00    62
+  FERMI_SHIFT =   0.216365880701066     
+  10 F= -.77597656E+03 E0= -.77597088E+03  d E =0.310024E-04  mag=     1.0000
+ curvature:  -3.14 expect dE=-0.835E-03 dE for cont linesearch -0.673E-07
+ trial: gam= 0.90952 g(F)=  0.266E-03 g(S)=  0.000E+00 ort = 0.499E-05 (trialstep = 0.188E+00)
+ search vector abs. value=  0.124E-02
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:  55  -0.29482E+00    0.00000E+00   -0.29482E+00    76
+  FERMI_SHIFT =   0.216365815828280     
+DAV:   1    -0.775976538300E+03    0.13704E-04   -0.10882E-02  5664   0.171E-01    0.209E-02
+SOL:  56  -0.29484E+00    0.00000E+00   -0.29484E+00    71
+  FERMI_SHIFT =   0.216365815828597     
+RMM:   2    -0.775976585649E+03   -0.47348E-04   -0.33876E-04  4585   0.318E-02    0.111E-02
+SOL:  57  -0.29484E+00    0.00000E+00   -0.29484E+00    68
+  FERMI_SHIFT =   0.216365815828618     
+RMM:   3    -0.775976591246E+03   -0.55974E-05   -0.12541E-05  3768   0.925E-03
+SOL:  58  -0.29485E+00    0.00000E+00   -0.29485E+00    70
+  FERMI_SHIFT =   0.216342034585431     
+  11 F= -.77597659E+03 E0= -.77597091E+03  d E =-.314810E-04  mag=     1.0000
+ trial-energy change:   -0.000031  1 .order   -0.000038   -0.000051   -0.000025
+ step:   0.3672(harm=  0.3672)  dis= 0.00067  next Energy=  -775.976609 (dE=-0.497E-04)
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:  59  -0.29484E+00    0.00000E+00   -0.29484E+00    76
+  FERMI_SHIFT =   0.216342096889978     
+DAV:   1    -0.775976546703E+03    0.38945E-04   -0.96945E-03  5568   0.161E-01    0.202E-02
+SOL:  60  -0.29485E+00    0.00000E+00   -0.29485E+00    71
+  FERMI_SHIFT =   0.216365180320893     
+RMM:   2    -0.775976591274E+03   -0.44571E-04   -0.29053E-04  4570   0.297E-02    0.114E-02
+SOL:  61  -0.29485E+00    0.00000E+00   -0.29485E+00    69
+  FERMI_SHIFT =   0.216365041300881     
+RMM:   3    -0.775976594530E+03   -0.32559E-05   -0.10901E-05  3714   0.863E-03
+SOL:  62  -0.29485E+00    0.00000E+00   -0.29485E+00    71
+  FERMI_SHIFT =   0.216342680475511     
+  12 F= -.77597659E+03 E0= -.77597091E+03  d E =-.347654E-04  mag=     1.0000
+ curvature:  -0.84 expect dE=-0.471E-03 dE for cont linesearch -0.999E-07
+ trial: gam= 2.04009 g(F)=  0.562E-03 g(S)=  0.000E+00 ort = 0.121E-04 (trialstep = 0.481E-01)
+ search vector abs. value=  0.576E-02
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:  63  -0.29484E+00    0.00000E+00   -0.29484E+00    73
+  FERMI_SHIFT =   0.216342716780815     
+DAV:   1    -0.775976594513E+03   -0.32381E-05   -0.32314E-03  5568   0.910E-02    0.121E-02
+SOL:  64  -0.29484E+00    0.00000E+00   -0.29484E+00    69
+  FERMI_SHIFT =   0.216364254195653     
+RMM:   2    -0.775976613190E+03   -0.18677E-04   -0.10234E-04  3893   0.181E-02    0.681E-03
+SOL:  65  -0.29484E+00    0.00000E+00   -0.29484E+00    66
+  FERMI_SHIFT =   0.216364254195666     
+RMM:   3    -0.775976615691E+03   -0.25015E-05   -0.63062E-06  3577   0.712E-03
+SOL:  66  -0.29484E+00    0.00000E+00   -0.29484E+00    68
+  FERMI_SHIFT =   0.216343735938311     
+  13 F= -.77597662E+03 E0= -.77597093E+03  d E =-.211610E-04  mag=     1.0000
+ ZBRENT: can't locate minimum, use default step
+ trial-energy change:   -0.000021  1 .order   -0.000025   -0.000028   -0.000022
+ step:   0.1925(harm=  0.2124)  dis= 0.00074  next Energy=  -775.976657 (dE=-0.623E-04)
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:  67  -0.29481E+00    0.00000E+00   -0.29481E+00    78
+  FERMI_SHIFT =   0.216343843961584     
+DAV:   1    -0.775976496324E+03    0.11687E-03   -0.29541E-02  5568   0.275E-01    0.356E-02
+SOL:  68  -0.29482E+00    0.00000E+00   -0.29482E+00    74
+  FERMI_SHIFT =   0.216364145208610     
+RMM:   2    -0.775976630246E+03   -0.13392E-03   -0.93550E-04  5226   0.502E-02    0.201E-02
+SOL:  69  -0.29481E+00    0.00000E+00   -0.29481E+00    70
+  FERMI_SHIFT =   0.216364145208729     
+RMM:   3    -0.775976637662E+03   -0.74162E-05   -0.25422E-05  3842   0.114E-02
+SOL:  70  -0.29478E+00    0.00000E+00   -0.29478E+00    73
+  FERMI_SHIFT =   0.216343343090357     
+  14 F= -.77597664E+03 E0= -.77597095E+03  d E =-.431320E-04  mag=     1.0000
+ curvature:  -1.03 expect dE=-0.198E-03 dE for cont linesearch -0.179E-07
+ trial: gam= 0.41084 g(F)=  0.192E-03 g(S)=  0.000E+00 ort = 0.100E-04 (trialstep = 0.770E-01)
+ search vector abs. value=  0.117E-02
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:  71  -0.29477E+00    0.00000E+00   -0.29477E+00    72
+  FERMI_SHIFT =   0.216343376051662     
+DAV:   1    -0.775976647178E+03   -0.16932E-04   -0.17546E-03  5616   0.651E-02    0.103E-02
+SOL:  72  -0.29477E+00    0.00000E+00   -0.29477E+00    68
+  FERMI_SHIFT =   0.216364277795392     
+RMM:   2    -0.775976653229E+03   -0.60515E-05   -0.55480E-05  3860   0.143E-02
+SOL:  73  -0.29476E+00    0.00000E+00   -0.29476E+00    66
+  FERMI_SHIFT =   0.216342860142214     
+  15 F= -.77597665E+03 E0= -.77597097E+03  d E =-.155671E-04  mag=     1.0000
+ ZBRENT: can't locate minimum, use default step
+ trial-energy change:   -0.000016  1 .order   -0.000013   -0.000015   -0.000012
+ step:   0.3080(harm=  0.3269)  dis= 0.00058  next Energy=  -775.976670 (dE=-0.321E-04)
+ reached required accuracy - stopping structural energy minimisation
+ writing wavefunctions
+SOL:  74  -0.29476E+00    0.00000E+00   -0.29476E+00     0
+  FERMI_SHIFT =   0.216342860142209     
+Job finished on bc12u11n2 at Thu Oct 15 12:45:23 CDT 2020
