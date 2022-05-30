@@ -1,0 +1,172 @@
+Job started on bc10u11n1 at Tue Mar 16 23:17:39 CDT 2021
+ running on   48 total cores
+ distrk:  each k-point on   12 cores,    4 groups
+ distr:  one band on    1 cores,   12 groups
+ using from now: INCAR     
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build May 01 2020 14:57:12) complex          
+  
+ POSCAR found type information on POSCAR  B  N  C  F  O 
+ POSCAR found :  5 types and      82 ions
+ scaLAPACK will be used
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|      For optimal performance we recommend to set                            |
+|        NCORE= 4 - approx SQRT( number of cores)                             |
+|      NCORE specifies how many cores store one orbital (NPAR=cpu/NCORE).     |
+|      This setting can  greatly improve the performance of VASP for DFT.     |
+|      The default,   NCORE=1            might be grossly inefficient         |
+|      on modern multi-core architectures or massively parallel machines.     |
+|      Do your own testing !!!!                                               |
+|      Unfortunately you need to use the default for GW and RPA calculations. |
+|      (for HF NCORE is supported but not extensively tested yet)             |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|      You have enabled k-point parallelism (KPAR>1).                         |
+|      This developmental code was originally  written by Paul Kent at ORNL,  |
+|      and carefully double checked in Vienna.                                |
+|      GW as well as linear response parallelism added by Martijn Marsman     |
+|      and Georg Kresse.                                                      |
+|      Carefully verify results versus KPAR=1.                                |
+|      Report problems to Paul Kent and Vienna.                               |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ WAVECAR not read
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:   1  -0.12550E+00    0.00000E+00   -0.12550E+00   116
+  FERMI_SHIFT =   0.216351762809132     
+DAV:   1     0.346417828721E+04    0.34642E+04   -0.11827E+05  6276   0.947E+02
+DAV:   2     0.566752854690E+02   -0.34075E+04   -0.31086E+04  8388   0.218E+02
+DAV:   3    -0.864119091788E+03   -0.92079E+03   -0.91279E+03  6792   0.127E+02
+DAV:   4    -0.908943457854E+03   -0.44824E+02   -0.44431E+02  6564   0.356E+01
+DAV:   5    -0.909881122358E+03   -0.93766E+00   -0.93484E+00  6888   0.454E+00BRMIX: very serious problems
+ the old and the new charge density differ
+ old charge density:   347.00000 new  346.70000
+BRMIX: very serious problems
+ the old and the new charge density differ
+ old charge density:   347.00000 new  346.70000
+BRMIX: very serious problems
+ the old and the new charge density differ
+BRMIX: very serious problems
+ the old and the new charge density differ
+ old charge density:   347.00000 new  346.70000
+ old charge density:   347.00000 new  346.70000
+    0.659E+01
+SOL:   2   0.89419E-02    0.00000E+00    0.89419E-02   107
+  FERMI_SHIFT =   0.216362599534293     
+RMM:   6    -0.668362778853E+03    0.24152E+03   -0.27526E+02  5280   0.267E+01    0.338E+01
+SOL:   3  -0.35064E+00    0.00000E+00   -0.35064E+00   104
+  FERMI_SHIFT =   0.216360188633527     
+RMM:   7    -0.701723181727E+03   -0.33360E+02   -0.77764E+01  5280   0.167E+01    0.231E+01
+SOL:   4  -0.55231E+00    0.00000E+00   -0.55231E+00   102
+  FERMI_SHIFT =   0.216358777349196     
+RMM:   8    -0.707320795551E+03   -0.55976E+01   -0.11911E+01  5280   0.861E+00    0.172E+01
+SOL:   5  -0.85015E+00    0.00000E+00   -0.85015E+00   105
+  FERMI_SHIFT =   0.216339647811629     
+RMM:   9    -0.749603185349E+03   -0.42282E+02   -0.25746E+01  5280   0.900E+00    0.115E+01
+SOL:   6  -0.88322E+00    0.00000E+00   -0.88322E+00   101
+  FERMI_SHIFT =   0.216339019239870     
+RMM:  10    -0.766052907313E+03   -0.16450E+02   -0.76629E+00  5287   0.437E+00    0.990E+00
+SOL:   7  -0.72132E+00    0.00000E+00   -0.72132E+00   102
+  FERMI_SHIFT =   0.216341775180510     
+RMM:  11    -0.782576210943E+03   -0.16523E+02   -0.96449E+00  5280   0.474E+00    0.812E+00
+SOL:   8  -0.48981E+00    0.00000E+00   -0.48981E+00   105
+  FERMI_SHIFT =   0.216365181988084     
+RMM:  12    -0.802070609954E+03   -0.19494E+02   -0.18324E+01  5284   0.596E+00    0.513E+00
+SOL:   9  -0.42326E+00    0.00000E+00   -0.42326E+00    98
+  FERMI_SHIFT =   0.216342540040745     
+RMM:  13    -0.803146433629E+03   -0.10758E+01   -0.26161E+00  5280   0.287E+00    0.413E+00
+SOL:  10  -0.33809E+00    0.00000E+00   -0.33809E+00    99
+  FERMI_SHIFT =   0.216342540042358     
+RMM:  14    -0.800718397705E+03    0.24280E+01   -0.12546E+00  5281   0.229E+00    0.335E+00
+SOL:  11  -0.25895E+00    0.00000E+00   -0.25895E+00    99
+  FERMI_SHIFT =   0.216348390149655     
+RMM:  15    -0.795491434490E+03    0.52270E+01   -0.83104E-01  5280   0.210E+00    0.254E+00
+SOL:  12  -0.24014E+00    0.00000E+00   -0.24014E+00    97
+  FERMI_SHIFT =   0.216342074107361     
+RMM:  16    -0.791439972728E+03    0.40515E+01   -0.28674E-01  5280   0.123E+00    0.201E+00
+SOL:  13  -0.25271E+00    0.00000E+00   -0.25271E+00    95
+  FERMI_SHIFT =   0.216338387975737     
+RMM:  17    -0.786144317519E+03    0.52957E+01   -0.16584E-01  5280   0.922E-01    0.135E+00
+SOL:  14  -0.28369E+00    0.00000E+00   -0.28369E+00    94
+  FERMI_SHIFT =   0.216339534304995     
+RMM:  18    -0.783119567053E+03    0.30248E+01   -0.95983E-02  5802   0.723E-01    0.102E+00
+SOL:  15  -0.30816E+00    0.00000E+00   -0.30816E+00    95
+  FERMI_SHIFT =   0.216364427991598     
+RMM:  19    -0.781356291089E+03    0.17633E+01   -0.11058E-01  6404   0.933E-01    0.751E-01
+SOL:  16  -0.32682E+00    0.00000E+00   -0.32682E+00    95
+  FERMI_SHIFT =   0.216365181979175     
+RMM:  20    -0.779493753206E+03    0.18625E+01   -0.15780E-01  6792   0.112E+00    0.445E-01
+SOL:  17  -0.32486E+00    0.00000E+00   -0.32486E+00    89
+  FERMI_SHIFT =   0.216342204715576     
+RMM:  21    -0.778493132629E+03    0.10006E+01   -0.14304E-01  6985   0.119E+00    0.242E-01
+SOL:  18  -0.31546E+00    0.00000E+00   -0.31546E+00    90
+  FERMI_SHIFT =   0.216365755065093     
+RMM:  22    -0.777991394853E+03    0.50174E+00   -0.13459E-01  7752   0.127E+00    0.115E-01
+SOL:  19  -0.30876E+00    0.00000E+00   -0.30876E+00    89
+  FERMI_SHIFT =   0.216365896985945     
+RMM:  23    -0.777863385818E+03    0.12801E+00   -0.75221E-02  5280   0.122E+00    0.615E-02
+SOL:  20  -0.30451E+00    0.00000E+00   -0.30451E+00    86
+  FERMI_SHIFT =   0.216366054774914     
+RMM:  24    -0.777871961048E+03   -0.85752E-02   -0.52604E-03  5280   0.254E-01    0.334E-02
+SOL:  21  -0.30223E+00    0.00000E+00   -0.30223E+00    85
+  FERMI_SHIFT =   0.216341775202273     
+RMM:  25    -0.777871950302E+03    0.10746E-04   -0.19184E-03  5280   0.178E-01    0.124E-02
+SOL:  22  -0.30152E+00    0.00000E+00   -0.30152E+00    79
+  FERMI_SHIFT =   0.216366225854073     
+RMM:  26    -0.777872977166E+03   -0.10269E-02   -0.29211E-04  5280   0.555E-02    0.949E-03
+SOL:  23  -0.30131E+00    0.00000E+00   -0.30131E+00    75
+  FERMI_SHIFT =   0.216341688731206     
+RMM:  27    -0.777873663469E+03   -0.68630E-03   -0.94170E-05  4919   0.350E-02    0.494E-03
+SOL:  24  -0.30116E+00    0.00000E+00   -0.30116E+00    75
+  FERMI_SHIFT =   0.216366359123142     
+RMM:  28    -0.777874309487E+03   -0.64602E-03   -0.54970E-05  4335   0.247E-02    0.402E-03
+SOL:  25  -0.30107E+00    0.00000E+00   -0.30107E+00    72
+  FERMI_SHIFT =   0.216366475538703     
+RMM:  29    -0.777874615191E+03   -0.30570E-03   -0.22944E-05  3992   0.159E-02    0.177E-03
+SOL:  26  -0.30100E+00    0.00000E+00   -0.30100E+00    69
+  FERMI_SHIFT =   0.216366568394762     
+RMM:  30    -0.777874736391E+03   -0.12120E-03   -0.10915E-05  3617   0.109E-02    0.149E-03
+SOL:  27  -0.30094E+00    0.00000E+00   -0.30094E+00    69
+  FERMI_SHIFT =   0.216366698166875     
+RMM:  31    -0.777874791743E+03   -0.55352E-04   -0.69769E-06  3567   0.846E-03    0.840E-04
+SOL:  28  -0.30088E+00    0.00000E+00   -0.30088E+00    68
+  FERMI_SHIFT =   0.216343408118580     
+RMM:  32    -0.777874815783E+03   -0.24039E-04   -0.52342E-06  3553   0.695E-03    0.715E-04
+SOL:  29  -0.30084E+00    0.00000E+00   -0.30084E+00    65
+  FERMI_SHIFT =   0.216365031647642     
+RMM:  33    -0.777874820269E+03   -0.44862E-05   -0.39978E-06  3545   0.616E-03
+SOL:  30  -0.30079E+00    0.00000E+00   -0.30079E+00    65
+  FERMI_SHIFT =   0.216337379753733     
+   1 F= -.77787482E+03 E0= -.77787197E+03  d E =-.777875E+03  mag=     1.0000
+ curvature:   0.00 expect dE= 0.000E+00 dE for cont linesearch  0.000E+00
+ trial: gam= 0.00000 g(F)=  0.132E-03 g(S)=  0.000E+00 ort = 0.000E+00 (trialstep = 0.100E+01)
+ search vector abs. value=  0.132E-03
+ reached required accuracy - stopping structural energy minimisation
+ writing wavefunctions
+SOL:  31  -0.30079E+00    0.00000E+00   -0.30079E+00     0
+  FERMI_SHIFT =   0.216337379753740     
+Job finished on bc10u11n1 at Wed Mar 17 03:37:26 CDT 2021
