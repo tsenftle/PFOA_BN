@@ -1,0 +1,107 @@
+Job started on bc10u13n2 at Wed Feb  3 19:46:15 CST 2021
+SLURM_JOBID=2464140
+SLURM_JOB_NODELIST=bc10u13n[2-3]
+ running on   48 total cores
+ distrk:  each k-point on    8 cores,    6 groups
+ distr:  one band on    1 cores,    8 groups
+ using from now: INCAR     
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build Jun 11 2020 13:42:08) complex          
+  
+ POSCAR found type information on POSCAR  B  N  C  F  O 
+ POSCAR found :  5 types and      82 ions
+ scaLAPACK will be used
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|      For optimal performance we recommend to set                            |
+|        NCORE= 4 - approx SQRT( number of cores)                             |
+|      NCORE specifies how many cores store one orbital (NPAR=cpu/NCORE).     |
+|      This setting can  greatly improve the performance of VASP for DFT.     |
+|      The default,   NCORE=1            might be grossly inefficient         |
+|      on modern multi-core architectures or massively parallel machines.     |
+|      Do your own testing !!!!                                               |
+|      Unfortunately you need to use the default for GW and RPA calculations. |
+|      (for HF NCORE is supported but not extensively tested yet)             |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|      You have enabled k-point parallelism (KPAR>1).                         |
+|      This developmental code was originally  written by Paul Kent at ORNL,  |
+|      and carefully double checked in Vienna.                                |
+|      GW as well as linear response parallelism added by Martijn Marsman     |
+|      and Georg Kresse.                                                      |
+|      Carefully verify results versus KPAR=1.                                |
+|      Report problems to Paul Kent and Vienna.                               |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+ LDA part: xc-table for Pade appr. of Perdew
+ POSCAR found type information on POSCAR  B  N  C  F  O 
+ POSCAR found :  5 types and      82 ions
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ WAVECAR not read
+ WARNING: random wavefunctions but no delay for mixing, default for NELMDL
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:   1  -0.12465E+00    0.00000E+00   -0.12465E+00   114
+DAV:   1     0.349702698270E+04    0.34970E+04   -0.11772E+05  6104   0.971E+02
+DAV:   2     0.916959956219E+02   -0.34053E+04   -0.31071E+04  8144   0.224E+02
+DAV:   3    -0.851515291460E+03   -0.94321E+03   -0.93563E+03  6600   0.131E+02
+DAV:   4    -0.899523302624E+03   -0.48008E+02   -0.47587E+02  6344   0.374E+01
+DAV:   5    -0.900527273859E+03   -0.10040E+01   -0.10003E+01  6488   0.474E+00BRMIX: very serious problems
+ the old and the new charge density differ
+ old charge density:   347.00000 new  345.89997
+BRMIX: very serious problems
+ the old and the new charge density differ
+ old charge density:   347.00000 new  345.89997
+BRMIX: very serious problems
+ the old and the new charge density differ
+ old charge density:   347.00000 new  345.89997
+BRMIX: very serious problems
+ the old and the new charge density differ
+    0.660E+01
+BRMIX: very serious problems
+ the old and the new charge density differ
+BRMIX: very serious problems
+ the old and the new charge density differ
+ old charge density:   347.00000 new  345.89997
+ old charge density:   347.00000 new  345.89997
+ old charge density:   347.00000 new  345.89997
+SOL:   2   0.96708E+00    0.00000E+00    0.96708E+00   106
+RMM:   6    -0.659862093878E+03    0.24067E+03   -0.28824E+02  5120   0.282E+01    0.334E+01
+SOL:   3   0.42875E+00    0.00000E+00    0.42875E+00   104
+RMM:   7    -0.702710938800E+03   -0.42849E+02   -0.75344E+01  5125   0.169E+01    0.238E+01
+SOL:   4   0.10957E+00    0.00000E+00    0.10957E+00   102
+RMM:   8    -0.706102552054E+03   -0.33916E+01   -0.13642E+01  5120   0.859E+00    0.182E+01
+SOL:   5  -0.40066E+00    0.00000E+00   -0.40066E+00   104
+RMM:   9    -0.732145721799E+03   -0.26043E+02   -0.15248E+01  5120   0.828E+00    0.121E+01
+SOL:   6  -0.91156E+00    0.00000E+00   -0.91156E+00   104
+RMM:  10    -0.763765163727E+03   -0.31619E+02   -0.16438E+01  5120   0.700E+00    0.112E+01
+SOL:   7  -0.86442E+00    0.00000E+00   -0.86442E+00    99
+RMM:  11    -0.769759665030E+03   -0.59945E+01   -0.27120E+00  5120   0.270E+00    0.938E+00
+SOL:   8  -0.96059E+00    0.00000E+00   -0.96059E+00   102
+RMM:  12    -0.784748434787E+03   -0.14989E+02   -0.10284E+01  5120   0.519E+00    0.772E+00
+SOL:   9  -0.12576E+01    0.00000E+00   -0.12576E+01   102
+RMM:  13    -0.794609441161E+03   -0.98610E+01   -0.96631E+00  5120   0.467E+00    0.537E+00
+SOL:  10  -0.14698E+01    0.00000E+00   -0.14698E+01   100
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 2464140 ON bc10u13n2 CANCELLED AT 2021-02-03T20:28:45 ***
+slurmstepd: error: *** STEP 2464140.0 ON bc10u13n2 CANCELLED AT 2021-02-03T20:28:45 ***
