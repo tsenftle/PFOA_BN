@@ -1,0 +1,89 @@
+Job started on bc4u21n2 at Fri Jan  8 06:36:13 CST 2021
+ running on   96 total cores
+ distrk:  each k-point on   24 cores,    4 groups
+ distr:  one band on    6 cores,    4 groups
+ using from now: INCAR     
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build May 01 2020 14:57:12) complex          
+  
+ POSCAR found type information on POSCAR  B  N 
+ POSCAR found :  2 types and      32 ions
+ scaLAPACK will be used
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|      You have enabled k-point parallelism (KPAR>1).                         |
+|      This developmental code was originally  written by Paul Kent at ORNL,  |
+|      and carefully double checked in Vienna.                                |
+|      GW as well as linear response parallelism added by Martijn Marsman     |
+|      and Georg Kresse.                                                      |
+|      Carefully verify results versus KPAR=1.                                |
+|      Report problems to Paul Kent and Vienna.                               |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+ LDA part: xc-table for Pade appr. of Perdew
+ found WAVECAR, reading the header
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ reading WAVECAR
+ the WAVECAR file was read successfully
+ initial charge from wavefunction
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:   1  -0.98699E-01    0.00000E+00   -0.98699E-01   109
+  FERMI_SHIFT =   0.189832391472868     
+DAV:   1    -0.308068159183E+03   -0.30807E+03   -0.18203E-06  3932   0.652E-03    0.329E-04
+SOL:   2  -0.98700E-01    0.00000E+00   -0.98700E-01    51
+  FERMI_SHIFT =   0.189832391472880     
+RMM:   2    -0.308068159129E+03    0.53413E-07   -0.28155E-07  2514   0.277E-03
+SOL:   3  -0.98701E-01    0.00000E+00   -0.98701E-01    52
+  FERMI_SHIFT =   0.189832364394314     
+   1 F= -.30806816E+03 E0= -.30806816E+03  d E =-.308068E+03  mag=     0.0000
+ curvature:   0.00 expect dE= 0.000E+00 dE for cont linesearch  0.000E+00
+ trial: gam= 0.00000 g(F)=  0.141E-03 g(S)=  0.000E+00 ort = 0.000E+00 (trialstep = 0.100E+01)
+ search vector abs. value=  0.141E-03
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:   4  -0.98701E-01    0.00000E+00   -0.98701E-01    73
+  FERMI_SHIFT =   0.189832364393690     
+DAV:   1    -0.308068098999E+03    0.60184E-04   -0.74947E-03  5720   0.281E-01    0.345E-02
+SOL:   5  -0.98715E-01    0.00000E+00   -0.98715E-01    70
+  FERMI_SHIFT =   0.189873205583209     
+RMM:   2    -0.308068138340E+03   -0.39341E-04   -0.33503E-04  5564   0.662E-02    0.210E-02
+SOL:   6  -0.98725E-01    0.00000E+00   -0.98725E-01    67
+  FERMI_SHIFT =   0.189832391472548     
+RMM:   3    -0.308068135231E+03    0.31087E-05   -0.86803E-06  3780   0.127E-02
+SOL:   7  -0.98751E-01    0.00000E+00   -0.98751E-01    70
+  FERMI_SHIFT =   0.189832391472437     
+   2 F= -.30806814E+03 E0= -.30806814E+03  d E =0.238983E-04  mag=     0.0000
+ trial-energy change:    0.000024  1 .order    0.000019   -0.000141    0.000179
+ step:   0.4396(harm=  0.4396)  dis= 0.00045  next Energy=  -308.068190 (dE=-0.309E-04)
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:   8  -0.98751E-01    0.00000E+00   -0.98751E-01    70
+  FERMI_SHIFT =   0.189832391473064     
+DAV:   1    -0.308068176575E+03   -0.38236E-04   -0.24961E-03  5760   0.165E-01    0.193E-02
+SOL:   9  -0.98750E-01    0.00000E+00   -0.98750E-01    66
+  FERMI_SHIFT =   0.189832364394600     
+RMM:   2    -0.308068191414E+03   -0.14839E-04   -0.13306E-04  5472   0.437E-02    0.132E-02
+SOL:  10  -0.98749E-01    0.00000E+00   -0.98749E-01    63
+  FERMI_SHIFT =   0.189873176693666     
+RMM:   3    -0.308068189166E+03    0.22479E-05   -0.40463E-06  3766   0.864E-03
+SOL:  11  -0.98749E-01    0.00000E+00   -0.98749E-01    66
+  FERMI_SHIFT =   0.189873176693663     
+   3 F= -.30806819E+03 E0= -.30806819E+03  d E =-.300369E-04  mag=     0.0000
+ curvature:  -0.22 expect dE=-0.657E-05 dE for cont linesearch -0.139E-06
+ trial: gam= 0.27950 g(F)=  0.299E-04 g(S)=  0.000E+00 ort =-0.943E-05 (trialstep = 0.888E+00)
+ search vector abs. value=  0.356E-04
+ reached required accuracy - stopping structural energy minimisation
+ writing wavefunctions
+SOL:  12  -0.98749E-01    0.00000E+00   -0.98749E-01     0
+  FERMI_SHIFT =   0.189873176693647     
+Job finished on bc4u21n2 at Fri Jan  8 07:24:51 CST 2021
