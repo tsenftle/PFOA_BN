@@ -1,0 +1,22 @@
+echo
+start mol
+title "mol"
+
+geometry nocenter noautosym noautoz
+  load mol.xyz
+end
+
+charge 1
+
+basis noprint
+  * library aug-cc-pVDZ
+end
+
+scf
+  tol2e 1d-9
+  uhf
+  doublet
+  vectors output hBN_q1.movecs
+end
+
+task scf
