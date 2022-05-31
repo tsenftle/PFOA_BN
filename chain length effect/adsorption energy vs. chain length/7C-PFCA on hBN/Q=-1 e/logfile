@@ -1,0 +1,945 @@
+Job started on c495-024.stampede2.tacc.utexas.edu at Thu Aug  5 11:36:37 CDT 2021
+TACC:  Starting up job 8231619 
+TACC:  Starting parallel tasks... 
+ running on   96 total cores
+ distrk:  each k-point on   96 cores,    1 groups
+ distr:  one band on   24 cores,    4 groups
+ using from now: INCAR     
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build May 01 2020 14:57:12) complex          
+  
+ POSCAR found type information on POSCAR  B  N  C  F  O 
+ POSCAR found :  5 types and      94 ions
+ scaLAPACK will be used
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|      For optimal performance we recommend to set                            |
+|        NCORE= 4 - approx SQRT( number of cores)                             |
+|      NCORE specifies how many cores store one orbital (NPAR=cpu/NCORE).     |
+|      This setting can  greatly improve the performance of VASP for DFT.     |
+|      The default,   NCORE=1            might be grossly inefficient         |
+|      on modern multi-core architectures or massively parallel machines.     |
+|      Do your own testing !!!!                                               |
+|      Unfortunately you need to use the default for GW and RPA calculations. |
+|      (for HF NCORE is supported but not extensively tested yet)             |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|  ADVICE TO THIS USER RUNNING 'VASP/VAMP'   (HEAR YOUR MASTER'S VOICE ...):  |
+|                                                                             |
+|      You have switched on vdW-DFT.                                          |
+|      This routine was written and supplied by Jiri Klimes.                  |
+|      We recommed that you carefully read and cite the following             |
+|      publication                                                            |
+|      J. Klimes, D.R. Bowler, A. Michelides                                  |
+|        J. Phys.: Cond Matt. 22 022201 (2010)                                |
+|      J. Klimes, D.R. Bowler, A. Michelides                                  |
+|        Phys. Rev. B. 83, 195131 (2011)                                      |
+|      and references therein.                                                |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+ LDA part: xc-table for Pade appr. of Perdew
+ found WAVECAR, reading the header
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ reading WAVECAR
+ the WAVECAR file was read successfully
+ initial charge from wavefunction
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:   1  -0.32123E+01    0.00000E+00   -0.32123E+01   118
+  FERMI_SHIFT =   0.247097963740402     
+Total rVV10 correction in eV:      9.6792957   426.1339392
+DAV:   1    -0.861622178298E+03   -0.86162E+03   -0.23379E-02  6176   0.561E-01    0.573E-02
+SOL:   2  -0.32123E+01    0.00000E+00   -0.32123E+01    75
+  FERMI_SHIFT =   0.247096999315906     
+Total rVV10 correction in eV:      9.6793021   426.1348509
+RMM:   2    -0.861622036528E+03    0.14177E-03   -0.31262E-04  6085   0.508E-02    0.367E-02
+SOL:   3  -0.32125E+01    0.00000E+00   -0.32125E+01    77
+  FERMI_SHIFT =   0.247094381731432     
+Total rVV10 correction in eV:      9.6793196   426.1339680
+RMM:   3    -0.861622195685E+03   -0.15916E-03   -0.16909E-04  5989   0.367E-02    0.950E-03
+SOL:   4  -0.32126E+01    0.00000E+00   -0.32126E+01    69
+  FERMI_SHIFT =   0.247083188290719     
+Total rVV10 correction in eV:      9.6793477   426.1340131
+RMM:   4    -0.861622203176E+03   -0.74912E-05   -0.14820E-05  4220   0.119E-02
+Total rVV10 correction in eV:      9.6793898   426.1339392
+SOL:   5  -0.32127E+01    0.00000E+00   -0.32127E+01    69
+  FERMI_SHIFT =   0.247084091664937     
+Total rVV10 correction in eV:      9.6793691   426.1339756
+   1 F= -.86162220E+03 E0= -.86162220E+03  d E =-.861622E+03  mag=    -0.0000
+ curvature:   0.00 expect dE= 0.000E+00 dE for cont linesearch  0.000E+00
+ trial: gam= 0.00000 g(F)=  0.111E-02 g(S)=  0.000E+00 ort = 0.000E+00 (trialstep = 0.100E+01)
+ search vector abs. value=  0.111E-02
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:   6  -0.32128E+01    0.00000E+00   -0.32128E+01    84
+  FERMI_SHIFT =   0.247083408488367     
+Total rVV10 correction in eV:      9.6793779   426.1339772
+DAV:   1    -0.861621433745E+03    0.76194E-03   -0.19958E-01  6384   0.856E-01    0.101E-01
+SOL:   7  -0.32129E+01    0.00000E+00   -0.32129E+01    79
+  FERMI_SHIFT =   0.247078460628151     
+Total rVV10 correction in eV:      9.6793682   426.1342887
+RMM:   2    -0.861622211410E+03   -0.77767E-03   -0.66107E-03  6160   0.150E-01    0.593E-02
+SOL:   8  -0.32130E+01    0.00000E+00   -0.32130E+01    76
+  FERMI_SHIFT =   0.247078056995973     
+Total rVV10 correction in eV:      9.6793657   426.1342548
+RMM:   3    -0.861622168000E+03    0.43410E-04   -0.15141E-04  6172   0.251E-02    0.392E-02
+SOL:   9  -0.32132E+01    0.00000E+00   -0.32132E+01    79
+  FERMI_SHIFT =   0.247077911173373     
+Total rVV10 correction in eV:      9.6793486   426.1340516
+RMM:   4    -0.861622202514E+03   -0.34513E-04   -0.13519E-04  6094   0.247E-02    0.831E-03
+SOL:  10  -0.32132E+01    0.00000E+00   -0.32132E+01    72
+  FERMI_SHIFT =   0.247100032462670     
+Total rVV10 correction in eV:      9.6793412   426.1340558
+RMM:   5    -0.861622201281E+03    0.12330E-05   -0.11929E-05  4128   0.102E-02
+Total rVV10 correction in eV:      9.6793264   426.1339392
+SOL:  11  -0.32132E+01    0.00000E+00   -0.32132E+01    73
+  FERMI_SHIFT =   0.247078056995883     
+Total rVV10 correction in eV:      9.6793331   426.1340516
+   2 F= -.86162220E+03 E0= -.86162220E+03  d E =0.189561E-05  mag=    -0.0000
+ trial-energy change:    0.000002  1 .order    0.000002   -0.001108    0.001111
+ step:   0.4992(harm=  0.4992)  dis= 0.00054  next Energy=  -861.622480 (dE=-0.276E-03)
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:  12  -0.32132E+01    0.00000E+00   -0.32132E+01    81
+  FERMI_SHIFT =   0.247078089333517     
+Total rVV10 correction in eV:      9.6793288   426.1340518
+DAV:   1    -0.861622282727E+03   -0.80213E-04   -0.49847E-02  6456   0.427E-01    0.506E-02
+SOL:  13  -0.32131E+01    0.00000E+00   -0.32131E+01    76
+  FERMI_SHIFT =   0.247099902743108     
+Total rVV10 correction in eV:      9.6793406   426.1341519
+RMM:   2    -0.861622465804E+03   -0.18308E-03   -0.16356E-03  6160   0.753E-02    0.291E-02
+SOL:  14  -0.32131E+01    0.00000E+00   -0.32131E+01    73
+  FERMI_SHIFT =   0.247078318755442     
+Total rVV10 correction in eV:      9.6793402   426.1341221
+RMM:   3    -0.861622461639E+03    0.41651E-05   -0.40855E-05  4836   0.150E-02
+Total rVV10 correction in eV:      9.6793527   426.1339392
+SOL:  15  -0.32132E+01    0.00000E+00   -0.32132E+01    75
+  FERMI_SHIFT =   0.247078392398696     
+Total rVV10 correction in eV:      9.6793417   426.1339956
+   3 F= -.86162246E+03 E0= -.86162246E+03  d E =-.258463E-03  mag=    -0.0000
+ curvature:  -0.25 expect dE=-0.249E-03 dE for cont linesearch -0.498E-08
+ trial: gam= 0.90459 g(F)=  0.997E-03 g(S)=  0.000E+00 ort =-0.470E-05 (trialstep = 0.526E+00)
+ search vector abs. value=  0.189E-02
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:  16  -0.32133E+01    0.00000E+00   -0.32133E+01    83
+  FERMI_SHIFT =   0.247078328732358     
+Total rVV10 correction in eV:      9.6793496   426.1339963
+DAV:   1    -0.861622405096E+03    0.60708E-04   -0.13226E-01  6208   0.666E-01    0.711E-02
+SOL:  17  -0.32135E+01    0.00000E+00   -0.32135E+01    77
+  FERMI_SHIFT =   0.247099778644949     
+Total rVV10 correction in eV:      9.6793538   426.1341909
+RMM:   2    -0.861622921771E+03   -0.51668E-03   -0.42367E-03  6160   0.112E-01    0.388E-02
+SOL:  18  -0.32135E+01    0.00000E+00   -0.32135E+01    73
+  FERMI_SHIFT =   0.247100026986165     
+Total rVV10 correction in eV:      9.6793567   426.1341743
+RMM:   3    -0.861622901479E+03    0.20292E-04   -0.87265E-05  5258   0.190E-02    0.266E-02
+SOL:  19  -0.32137E+01    0.00000E+00   -0.32137E+01    76
+  FERMI_SHIFT =   0.247096321299522     
+Total rVV10 correction in eV:      9.6793537   426.1340108
+RMM:   4    -0.861622939752E+03   -0.38273E-04   -0.71365E-05  5158   0.193E-02    0.722E-03
+SOL:  20  -0.32137E+01    0.00000E+00   -0.32137E+01    69
+  FERMI_SHIFT =   0.247082758067292     
+Total rVV10 correction in eV:      9.6793497   426.1340091
+RMM:   5    -0.861622938670E+03    0.10823E-05   -0.11443E-05  4122   0.103E-02
+Total rVV10 correction in eV:      9.6793401   426.1339392
+SOL:  21  -0.32137E+01    0.00000E+00   -0.32137E+01    69
+  FERMI_SHIFT =   0.247096321299480     
+Total rVV10 correction in eV:      9.6793458   426.1340022
+   4 F= -.86162294E+03 E0= -.86162294E+03  d E =-.477031E-03  mag=    -0.0000
+ ZBRENT: can't locate minimum, use default step
+ trial-energy change:   -0.000477  1 .order   -0.000464   -0.000522   -0.000405
+ step:   2.1037(harm=  2.3474)  dis= 0.00204  next Energy=  -861.623627 (dE=-0.117E-02)
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:  22  -0.32140E+01    0.00000E+00   -0.32140E+01    88
+  FERMI_SHIFT =   0.247096911679883     
+Total rVV10 correction in eV:      9.6793689   426.1340071
+DAV:   1    -0.861618995060E+03    0.39447E-02   -0.11844E+00  6160   0.199E+00    0.216E-01
+SOL:  23  -0.32144E+01    0.00000E+00   -0.32144E+01    81
+  FERMI_SHIFT =   0.247097965548053     
+Total rVV10 correction in eV:      9.6793712   426.1347669
+RMM:   2    -0.861623698780E+03   -0.47037E-02   -0.37201E-02  6160   0.330E-01    0.115E-01
+SOL:  24  -0.32145E+01    0.00000E+00   -0.32145E+01    78
+  FERMI_SHIFT =   0.247097691795029     
+Total rVV10 correction in eV:      9.6793725   426.1346912
+RMM:   3    -0.861623441506E+03    0.25727E-03   -0.75246E-04  6228   0.488E-02    0.790E-02
+SOL:  25  -0.32148E+01    0.00000E+00   -0.32148E+01    81
+  FERMI_SHIFT =   0.247097296085486     
+Total rVV10 correction in eV:      9.6793552   426.1341559
+RMM:   4    -0.861623730445E+03   -0.28894E-03   -0.50914E-04  6160   0.458E-02    0.216E-02
+SOL:  26  -0.32148E+01    0.00000E+00   -0.32148E+01    74
+  FERMI_SHIFT =   0.247097296085436     
+Total rVV10 correction in eV:      9.6793427   426.1341539
+RMM:   5    -0.861623722645E+03    0.78006E-05   -0.27765E-05  4571   0.125E-02
+Total rVV10 correction in eV:      9.6793161   426.1339391
+SOL:  27  -0.32148E+01    0.00000E+00   -0.32148E+01    74
+  FERMI_SHIFT =   0.247097296085437     
+Total rVV10 correction in eV:      9.6793309   426.1341407
+   5 F= -.86162372E+03 E0= -.86162372E+03  d E =-.126101E-02  mag=    -0.0000
+ curvature:  -2.20 expect dE=-0.429E-02 dE for cont linesearch -0.559E-04
+ trial: gam= 1.56676 g(F)=  0.195E-02 g(S)=  0.000E+00 ort = 0.219E-03 (trialstep = 0.219E+00)
+ search vector abs. value=  0.729E-02
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:  28  -0.32150E+01    0.00000E+00   -0.32150E+01    81
+  FERMI_SHIFT =   0.247097324110174     
+Total rVV10 correction in eV:      9.6793220   426.1341409
+DAV:   1    -0.861623816012E+03   -0.85567E-04   -0.83933E-02  6424   0.520E-01    0.600E-02
+SOL:  29  -0.32150E+01    0.00000E+00   -0.32150E+01    77
+  FERMI_SHIFT =   0.247081754710406     
+Total rVV10 correction in eV:      9.6793252   426.1342510
+RMM:   2    -0.861624151490E+03   -0.33548E-03   -0.27814E-03  6160   0.893E-02    0.312E-02
+SOL:  30  -0.32151E+01    0.00000E+00   -0.32151E+01    74
+  FERMI_SHIFT =   0.247097270296752     
+Total rVV10 correction in eV:      9.6793246   426.1342239
+RMM:   3    -0.861624142086E+03    0.94037E-05   -0.61486E-05  4877   0.160E-02
+Total rVV10 correction in eV:      9.6793140   426.1339392
+SOL:  31  -0.32152E+01    0.00000E+00   -0.32152E+01    78
+  FERMI_SHIFT =   0.247081925229400     
+Total rVV10 correction in eV:      9.6793202   426.1340921
+   6 F= -.86162414E+03 E0= -.86162414E+03  d E =-.419442E-03  mag=    -0.0000
+ trial-energy change:   -0.000419  1 .order   -0.000423   -0.000502   -0.000344
+ step:   0.6955(harm=  0.6955)  dis= 0.00145  next Energy=  -861.624520 (dE=-0.798E-03)
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:  32  -0.32155E+01    0.00000E+00   -0.32155E+01    85
+  FERMI_SHIFT =   0.247081862659660     
+Total rVV10 correction in eV:      9.6793008   426.1340932
+DAV:   1    -0.861623045081E+03    0.11064E-02   -0.39420E-01  6184   0.112E+00    0.128E-01
+SOL:  33  -0.32156E+01    0.00000E+00   -0.32156E+01    81
+  FERMI_SHIFT =   0.247077804965011     
+Total rVV10 correction in eV:      9.6793144   426.1344201
+RMM:   2    -0.861624591145E+03   -0.15461E-02   -0.12567E-02  6160   0.189E-01    0.660E-02
+SOL:  34  -0.32156E+01    0.00000E+00   -0.32156E+01    77
+  FERMI_SHIFT =   0.247100262805581     
+Total rVV10 correction in eV:      9.6793145   426.1343598
+RMM:   3    -0.861624546163E+03    0.44982E-04   -0.27207E-04  5906   0.295E-02    0.449E-02
+SOL:  35  -0.32156E+01    0.00000E+00   -0.32156E+01    81
+  FERMI_SHIFT =   0.247100045439217     
+Total rVV10 correction in eV:      9.6793105   426.1340968
+RMM:   4    -0.861624636126E+03   -0.89962E-04   -0.15854E-04  5804   0.273E-02    0.105E-02
+SOL:  36  -0.32156E+01    0.00000E+00   -0.32156E+01    73
+  FERMI_SHIFT =   0.247100045439216     
+Total rVV10 correction in eV:      9.6793100   426.1340941
+RMM:   5    -0.861624635811E+03    0.31525E-06   -0.12861E-05  4143   0.101E-02
+Total rVV10 correction in eV:      9.6792964   426.1339392
+SOL:  37  -0.32155E+01    0.00000E+00   -0.32155E+01    75
+  FERMI_SHIFT =   0.247099945194548     
+Total rVV10 correction in eV:      9.6793083   426.1340826
+   7 F= -.86162464E+03 E0= -.86162464E+03  d E =-.913166E-03  mag=    -0.0000
+ curvature:  -1.11 expect dE=-0.296E-02 dE for cont linesearch -0.930E-05
+ trial: gam= 1.54677 g(F)=  0.268E-02 g(S)=  0.000E+00 ort = 0.248E-03 (trialstep = 0.110E+00)
+ search vector abs. value=  0.209E-01
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:  38  -0.32157E+01    0.00000E+00   -0.32157E+01    80
+  FERMI_SHIFT =   0.247099951515178     
+Total rVV10 correction in eV:      9.6792965   426.1340827
+DAV:   1    -0.861624702486E+03   -0.66361E-04   -0.56003E-02  6576   0.420E-01    0.497E-02
+SOL:  39  -0.32156E+01    0.00000E+00   -0.32156E+01    76
+  FERMI_SHIFT =   0.247099951516363     
+Total rVV10 correction in eV:      9.6793003   426.1341659
+RMM:   2    -0.861624938353E+03   -0.23587E-03   -0.18977E-03  6160   0.724E-02    0.272E-02
+SOL:  40  -0.32155E+01    0.00000E+00   -0.32155E+01    71
+  FERMI_SHIFT =   0.247078496875212     
+Total rVV10 correction in eV:      9.6792995   426.1341468
+RMM:   3    -0.861624932859E+03    0.54935E-05   -0.41908E-05  4717   0.139E-02
+Total rVV10 correction in eV:      9.6792932   426.1339392
+SOL:  41  -0.32153E+01    0.00000E+00   -0.32153E+01    75
+  FERMI_SHIFT =   0.247078929498302     
+Total rVV10 correction in eV:      9.6792958   426.1340380
+   8 F= -.86162493E+03 E0= -.86162493E+03  d E =-.297049E-03  mag=    -0.0000
+ ZBRENT: can't locate minimum, use default step
+ trial-energy change:   -0.000297  1 .order   -0.000296   -0.000336   -0.000256
+ step:   0.4385(harm=  0.4638)  dis= 0.00159  next Energy=  -861.625346 (dE=-0.710E-03)
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:  42  -0.32158E+01    0.00000E+00   -0.32158E+01    85
+  FERMI_SHIFT =   0.247078912425898     
+Total rVV10 correction in eV:      9.6792604   426.1340397
+DAV:   1    -0.861623368949E+03    0.15694E-02   -0.49974E-01  6192   0.125E+00    0.149E-01
+SOL:  43  -0.32156E+01    0.00000E+00   -0.32156E+01    80
+  FERMI_SHIFT =   0.247079181094983     
+Total rVV10 correction in eV:      9.6792798   426.1344221
+RMM:   2    -0.861625432670E+03   -0.20637E-02   -0.16381E-02  6160   0.210E-01    0.792E-02
+SOL:  44  -0.32153E+01    0.00000E+00   -0.32153E+01    77
+  FERMI_SHIFT =   0.247099388799941     
+Total rVV10 correction in eV:      9.6792780   426.1343559
+RMM:   3    -0.861625370748E+03    0.61923E-04   -0.33229E-04  5911   0.321E-02    0.542E-02
+SOL:  45  -0.32146E+01    0.00000E+00   -0.32146E+01    81
+  FERMI_SHIFT =   0.247098822958029     
+Total rVV10 correction in eV:      9.6792705   426.1340312
+RMM:   4    -0.861625499365E+03   -0.12862E-03   -0.21079E-04  5762   0.301E-02    0.141E-02
+SOL:  46  -0.32145E+01    0.00000E+00   -0.32145E+01    71
+  FERMI_SHIFT =   0.247080452619835     
+Total rVV10 correction in eV:      9.6792739   426.1340307
+RMM:   5    -0.861625497073E+03    0.22915E-05   -0.20545E-05  4341   0.115E-02
+Total rVV10 correction in eV:      9.6792790   426.1339393
+SOL:  47  -0.32143E+01    0.00000E+00   -0.32143E+01    71
+  FERMI_SHIFT =   0.247080512537048     
+Total rVV10 correction in eV:      9.6792758   426.1340275
+   9 F= -.86162550E+03 E0= -.86162550E+03  d E =-.861262E-03  mag=     0.0000
+ curvature:  -1.57 expect dE=-0.415E-02 dE for cont linesearch -0.390E-04
+ ZBRENT: extrapolating
+ opt :   0.5845  next Energy=  -861.625550 (dE=-0.914E-03)
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:  48  -0.32145E+01    0.00000E+00   -0.32145E+01    81
+  FERMI_SHIFT =   0.247080508993316     
+Total rVV10 correction in eV:      9.6792599   426.1340280
+DAV:   1    -0.861625127389E+03    0.37198E-03   -0.99091E-02  6528   0.558E-01    0.663E-02
+SOL:  49  -0.32143E+01    0.00000E+00   -0.32143E+01    77
+  FERMI_SHIFT =   0.247098455432110     
+Total rVV10 correction in eV:      9.6792674   426.1341746
+RMM:   2    -0.861625537968E+03   -0.41058E-03   -0.33332E-03  6160   0.951E-02    0.356E-02
+SOL:  50  -0.32141E+01    0.00000E+00   -0.32141E+01    74
+  FERMI_SHIFT =   0.247098401409324     
+Total rVV10 correction in eV:      9.6792677   426.1341618
+RMM:   3    -0.861625525633E+03    0.12335E-04   -0.70462E-05  4925   0.168E-02    0.244E-02
+SOL:  51  -0.32135E+01    0.00000E+00   -0.32135E+01    78
+  FERMI_SHIFT =   0.247081008466291     
+Total rVV10 correction in eV:      9.6792672   426.1340539
+RMM:   4    -0.861625555280E+03   -0.29646E-04   -0.53552E-05  4986   0.169E-02    0.661E-03
+SOL:  52  -0.32134E+01    0.00000E+00   -0.32134E+01    68
+  FERMI_SHIFT =   0.247081114293816     
+Total rVV10 correction in eV:      9.6792695   426.1340538
+RMM:   5    -0.861625556049E+03   -0.76961E-06   -0.10789E-05  4108   0.963E-03
+Total rVV10 correction in eV:      9.6792752   426.1339394
+SOL:  53  -0.32132E+01    0.00000E+00   -0.32132E+01    69
+  FERMI_SHIFT =   0.247081190510581     
+Total rVV10 correction in eV:      9.6792713   426.1340509
+  10 F= -.86162556E+03 E0= -.86162556E+03  d E =-.920239E-03  mag=     0.0000
+ curvature:  -2.12 expect dE=-0.962E-02 dE for cont linesearch -0.452E-07
+ trial: gam= 1.77518 g(F)=  0.454E-02 g(S)=  0.000E+00 ort =-0.211E-04 (trialstep = 0.608E-01)
+ search vector abs. value=  0.703E-01
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:  54  -0.32134E+01    0.00000E+00   -0.32134E+01    80
+  FERMI_SHIFT =   0.247081174321455     
+Total rVV10 correction in eV:      9.6792562   426.1340513
+DAV:   1    -0.861625568151E+03   -0.12871E-04   -0.60709E-02  6192   0.434E-01    0.503E-02
+SOL:  55  -0.32132E+01    0.00000E+00   -0.32132E+01    75
+  FERMI_SHIFT =   0.247081174320405     
+Total rVV10 correction in eV:      9.6792601   426.1341515
+RMM:   2    -0.861625808269E+03   -0.24012E-03   -0.19754E-03  6160   0.740E-02    0.258E-02
+SOL:  56  -0.32130E+01    0.00000E+00   -0.32130E+01    72
+  FERMI_SHIFT =   0.247100474626822     
+Total rVV10 correction in eV:      9.6792601   426.1341381
+RMM:   3    -0.861625802198E+03    0.60714E-05   -0.43530E-05  4744   0.141E-02
+Total rVV10 correction in eV:      9.6792631   426.1339394
+SOL:  57  -0.32124E+01    0.00000E+00   -0.32124E+01    75
+  FERMI_SHIFT =   0.247100474626877     
+Total rVV10 correction in eV:      9.6792591   426.1340478
+  11 F= -.86162580E+03 E0= -.86162580E+03  d E =-.246149E-03  mag=     0.0000
+ ZBRENT: can't locate minimum, use default step
+ trial-energy change:   -0.000246  1 .order   -0.000250   -0.000274   -0.000226
+ step:   0.2432(harm=  0.3489)  dis= 0.00151  next Energy=  -861.626341 (dE=-0.785E-03)
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:  58  -0.32130E+01    0.00000E+00   -0.32130E+01    86
+  FERMI_SHIFT =   0.247100522560278     
+Total rVV10 correction in eV:      9.6792139   426.1340498
+DAV:   1    -0.861624168544E+03    0.16397E-02   -0.54341E-01  6160   0.130E+00    0.151E-01
+SOL:  59  -0.32126E+01    0.00000E+00   -0.32126E+01    80
+  FERMI_SHIFT =   0.247100433048414     
+Total rVV10 correction in eV:      9.6792282   426.1344518
+RMM:   2    -0.861626360943E+03   -0.21924E-02   -0.17319E-02  6160   0.216E-01    0.765E-02
+SOL:  60  -0.32122E+01    0.00000E+00   -0.32122E+01    77
+  FERMI_SHIFT =   0.247100433049102     
+Total rVV10 correction in eV:      9.6792249   426.1343932
+RMM:   3    -0.861626288975E+03    0.71968E-04   -0.35249E-04  5939   0.329E-02    0.523E-02
+SOL:  61  -0.32111E+01    0.00000E+00   -0.32111E+01    80
+  FERMI_SHIFT =   0.247097639140924     
+Total rVV10 correction in eV:      9.6792154   426.1340905
+RMM:   4    -0.861626420619E+03   -0.13164E-03   -0.20316E-04  5766   0.304E-02    0.136E-02
+SOL:  62  -0.32110E+01    0.00000E+00   -0.32110E+01    73
+  FERMI_SHIFT =   0.247081343422182     
+Total rVV10 correction in eV:      9.6792164   426.1340900
+RMM:   5    -0.861626418949E+03    0.16702E-05   -0.14837E-05  4201   0.105E-02
+Total rVV10 correction in eV:      9.6792255   426.1339395
+SOL:  63  -0.32106E+01    0.00000E+00   -0.32106E+01    74
+  FERMI_SHIFT =   0.247097726446094     
+Total rVV10 correction in eV:      9.6792179   426.1340832
+  12 F= -.86162642E+03 E0= -.86162642E+03  d E =-.862900E-03  mag=     0.0000
+ curvature:  -2.36 expect dE=-0.636E-02 dE for cont linesearch -0.202E-03
+ ZBRENT: increasing intervall
+ opt :   0.6080  next Energy=  -861.626855 (dE=-0.130E-02)
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:  64  -0.32117E+01    0.00000E+00   -0.32117E+01    89
+  FERMI_SHIFT =   0.247097835174727     
+Total rVV10 correction in eV:      9.6791272   426.1340891
+DAV:   1    -0.861617417597E+03    0.90030E-02   -0.21854E+00  6160   0.260E+00    0.301E-01
+SOL:  65  -0.32110E+01    0.00000E+00   -0.32110E+01    83
+  FERMI_SHIFT =   0.247080672173509     
+Total rVV10 correction in eV:      9.6791613   426.1350264
+RMM:   2    -0.861626711727E+03   -0.92941E-02   -0.70672E-02  6160   0.435E-01    0.156E-01
+SOL:  66  -0.32103E+01    0.00000E+00   -0.32103E+01    80
+  FERMI_SHIFT =   0.247080672172441     
+Total rVV10 correction in eV:      9.6791502   426.1348941
+RMM:   3    -0.861626304639E+03    0.40709E-03   -0.13773E-03  6224   0.628E-02    0.107E-01
+SOL:  67  -0.32082E+01    0.00000E+00   -0.32082E+01    83
+  FERMI_SHIFT =   0.247097957498312     
+Total rVV10 correction in eV:      9.6791280   426.1342491
+RMM:   4    -0.861626736274E+03   -0.43164E-03   -0.82423E-04  6160   0.573E-02    0.288E-02
+SOL:  68  -0.32080E+01    0.00000E+00   -0.32080E+01    76
+  FERMI_SHIFT =   0.247097880474420     
+Total rVV10 correction in eV:      9.6791289   426.1342513
+RMM:   5    -0.861626725475E+03    0.10800E-04   -0.39165E-05  4688   0.134E-02    0.146E-02
+SOL:  69  -0.32074E+01    0.00000E+00   -0.32074E+01    77
+  FERMI_SHIFT =   0.247097880474401     
+Total rVV10 correction in eV:      9.6791308   426.1342461
+RMM:   6    -0.861626728541E+03   -0.30669E-05   -0.30586E-05  4575   0.108E-02
+Total rVV10 correction in eV:      9.6791490   426.1339397
+SOL:  70  -0.32068E+01    0.00000E+00   -0.32068E+01    76
+  FERMI_SHIFT =   0.247081234745697     
+Total rVV10 correction in eV:      9.6791331   426.1342394
+  13 F= -.86162673E+03 E0= -.86162673E+03  d E =-.117249E-02  mag=     0.0000
+ curvature:  -5.08 expect dE=-0.247E-01 dE for cont linesearch -0.500E-04
+ trial: gam= 0.94485 g(F)=  0.487E-02 g(S)=  0.000E+00 ort =-0.832E-03 (trialstep = 0.170E+00)
+ search vector abs. value=  0.660E-01
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:  71  -0.32071E+01    0.00000E+00   -0.32071E+01    85
+  FERMI_SHIFT =   0.247081077761332     
+Total rVV10 correction in eV:      9.6790923   426.1342405
+DAV:   1    -0.861625415172E+03    0.13103E-02   -0.47371E-01  6288   0.123E+00    0.140E-01
+SOL:  72  -0.32069E+01    0.00000E+00   -0.32069E+01    80
+  FERMI_SHIFT =   0.247098283159305     
+Total rVV10 correction in eV:      9.6790959   426.1345720
+RMM:   2    -0.861627322747E+03   -0.19076E-02   -0.15177E-02  6160   0.206E-01    0.727E-02
+SOL:  73  -0.32066E+01    0.00000E+00   -0.32066E+01    77
+  FERMI_SHIFT =   0.247080987620058     
+Total rVV10 correction in eV:      9.6790955   426.1345133
+RMM:   3    -0.861627261328E+03    0.61419E-04   -0.29966E-04  5904   0.315E-02    0.496E-02
+SOL:  74  -0.32059E+01    0.00000E+00   -0.32059E+01    80
+  FERMI_SHIFT =   0.247080987619901     
+Total rVV10 correction in eV:      9.6790896   426.1342026
+RMM:   4    -0.861627386742E+03   -0.12541E-03   -0.19339E-04  5818   0.299E-02    0.125E-02
+SOL:  75  -0.32057E+01    0.00000E+00   -0.32057E+01    73
+  FERMI_SHIFT =   0.247098036294620     
+Total rVV10 correction in eV:      9.6790871   426.1341926
+RMM:   5    -0.861627386256E+03    0.48644E-06   -0.16039E-05  4232   0.114E-02
+Total rVV10 correction in eV:      9.6790945   426.1339398
+SOL:  76  -0.32054E+01    0.00000E+00   -0.32054E+01    74
+  FERMI_SHIFT =   0.247098036294594     
+Total rVV10 correction in eV:      9.6790860   426.1341719
+  14 F= -.86162739E+03 E0= -.86162739E+03  d E =-.657714E-03  mag=     0.0000
+ ZBRENT: can't locate minimum, use default step
+ trial-energy change:   -0.000658  1 .order   -0.000615   -0.000695   -0.000535
+ step:   0.6810(harm=  0.7421)  dis= 0.00311  next Energy=  -861.628243 (dE=-0.151E-02)
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:  77  -0.32064E+01    0.00000E+00   -0.32064E+01    90
+  FERMI_SHIFT =   0.247080528090305     
+Total rVV10 correction in eV:      9.6789639   426.1341801
+DAV:   1    -0.861610558823E+03    0.16828E-01   -0.42625E+00  6160   0.367E+00    0.420E-01
+SOL:  78  -0.32066E+01    0.00000E+00   -0.32066E+01    86
+  FERMI_SHIFT =   0.247080115040253     
+Total rVV10 correction in eV:      9.6789803   426.1355772
+RMM:   2    -0.861628429120E+03   -0.17870E-01   -0.13657E-01  6160   0.613E-01    0.219E-01
+SOL:  79  -0.32065E+01    0.00000E+00   -0.32065E+01    82
+  FERMI_SHIFT =   0.247077563897173     
+Total rVV10 correction in eV:      9.6789674   426.1353476
+RMM:   3    -0.861627576262E+03    0.85286E-03   -0.25942E-03  6198   0.867E-02    0.149E-01
+SOL:  80  -0.32060E+01    0.00000E+00   -0.32060E+01    85
+  FERMI_SHIFT =   0.247098724657789     
+Total rVV10 correction in eV:      9.6789405   426.1342637
+RMM:   4    -0.861628257465E+03   -0.68120E-03   -0.16052E-03  6160   0.786E-02    0.386E-02
+SOL:  81  -0.32059E+01    0.00000E+00   -0.32059E+01    77
+  FERMI_SHIFT =   0.247080259005820     
+Total rVV10 correction in eV:      9.6789267   426.1342561
+RMM:   5    -0.861628236942E+03    0.20523E-04   -0.76510E-05  5097   0.172E-02    0.196E-02
+SOL:  82  -0.32056E+01    0.00000E+00   -0.32056E+01    78
+  FERMI_SHIFT =   0.247080259005905     
+Total rVV10 correction in eV:      9.6789162   426.1342420
+RMM:   6    -0.861628238077E+03   -0.11351E-05   -0.47826E-05  4699   0.130E-02
+Total rVV10 correction in eV:      9.6789374   426.1339400
+SOL:  83  -0.32054E+01    0.00000E+00   -0.32054E+01    74
+  FERMI_SHIFT =   0.247080259005839     
+Total rVV10 correction in eV:      9.6789195   426.1342279
+  15 F= -.86162824E+03 E0= -.86162824E+03  d E =-.150954E-02  mag=     0.0000
+ curvature:  -5.94 expect dE=-0.366E-01 dE for cont linesearch -0.403E-06
+ trial: gam= 0.98450 g(F)=  0.616E-02 g(S)=  0.000E+00 ort =-0.670E-04 (trialstep = 0.257E+00)
+ search vector abs. value=  0.700E-01
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:  84  -0.32060E+01    0.00000E+00   -0.32060E+01    87
+  FERMI_SHIFT =   0.247080021332412     
+Total rVV10 correction in eV:      9.6788694   426.1342298
+DAV:   1    -0.861624943975E+03    0.32930E-02   -0.10947E+00  6192   0.186E+00    0.216E-01
+SOL:  85  -0.32062E+01    0.00000E+00   -0.32062E+01    82
+  FERMI_SHIFT =   0.247078445720850     
+Total rVV10 correction in eV:      9.6788772   426.1347999
+RMM:   2    -0.861629356506E+03   -0.44125E-02   -0.35301E-02  6160   0.312E-01    0.117E-01
+SOL:  86  -0.32062E+01    0.00000E+00   -0.32062E+01    79
+  FERMI_SHIFT =   0.247078758354158     
+Total rVV10 correction in eV:      9.6788766   426.1346881
+RMM:   3    -0.861629193672E+03    0.16283E-03   -0.71332E-04  6156   0.466E-02    0.802E-02
+SOL:  87  -0.32062E+01    0.00000E+00   -0.32062E+01    82
+  FERMI_SHIFT =   0.247099356476440     
+Total rVV10 correction in eV:      9.6788684   426.1341512
+RMM:   4    -0.861629468940E+03   -0.27527E-03   -0.46180E-04  6148   0.431E-02    0.206E-02
+SOL:  88  -0.32062E+01    0.00000E+00   -0.32062E+01    74
+  FERMI_SHIFT =   0.247099496756499     
+Total rVV10 correction in eV:      9.6788608   426.1341324
+RMM:   5    -0.861629464310E+03    0.46296E-05   -0.37614E-05  4797   0.152E-02
+Total rVV10 correction in eV:      9.6788638   426.1339400
+SOL:  89  -0.32062E+01    0.00000E+00   -0.32062E+01    74
+  FERMI_SHIFT =   0.247079631361377     
+Total rVV10 correction in eV:      9.6788580   426.1341071
+  16 F= -.86162946E+03 E0= -.86162946E+03  d E =-.122623E-02  mag=     0.0000
+ trial-energy change:   -0.001226  1 .order   -0.001133   -0.001566   -0.000700
+ step:   0.3649(harm=  0.4643)  dis= 0.00177  next Energy=  -861.629619 (dE=-0.138E-02)
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:  90  -0.32064E+01    0.00000E+00   -0.32064E+01    83
+  FERMI_SHIFT =   0.247079550963823     
+Total rVV10 correction in eV:      9.6788368   426.1341076
+DAV:   1    -0.861628895850E+03    0.57309E-03   -0.19415E-01  6448   0.786E-01    0.921E-02
+SOL:  91  -0.32066E+01    0.00000E+00   -0.32066E+01    79
+  FERMI_SHIFT =   0.247099575889443     
+Total rVV10 correction in eV:      9.6788376   426.1343162
+RMM:   2    -0.861629659272E+03   -0.76342E-03   -0.63572E-03  6160   0.133E-01    0.496E-02
+SOL:  92  -0.32066E+01    0.00000E+00   -0.32066E+01    76
+  FERMI_SHIFT =   0.247079589914752     
+Total rVV10 correction in eV:      9.6788390   426.1342838
+RMM:   3    -0.861629636720E+03    0.22552E-04   -0.13493E-04  5381   0.220E-02    0.340E-02
+SOL:  93  -0.32067E+01    0.00000E+00   -0.32067E+01    79
+  FERMI_SHIFT =   0.247079792177303     
+Total rVV10 correction in eV:      9.6788361   426.1340936
+RMM:   4    -0.861629704280E+03   -0.67561E-04   -0.95911E-05  5180   0.219E-02    0.897E-03
+SOL:  94  -0.32068E+01    0.00000E+00   -0.32068E+01    72
+  FERMI_SHIFT =   0.247079792177350     
+Total rVV10 correction in eV:      9.6788333   426.1340856
+RMM:   5    -0.861629703495E+03    0.78502E-06   -0.15770E-05  4192   0.119E-02
+Total rVV10 correction in eV:      9.6788375   426.1339400
+SOL:  95  -0.32069E+01    0.00000E+00   -0.32069E+01    72
+  FERMI_SHIFT =   0.247079796021994     
+Total rVV10 correction in eV:      9.6788326   426.1340731
+  17 F= -.86162970E+03 E0= -.86162970E+03  d E =-.146542E-02  mag=     0.0000
+ curvature:  -2.05 expect dE=-0.736E-02 dE for cont linesearch -0.496E-04
+ ZBRENT: increasing intervall
+ opt :   0.5811  next Energy=  -861.629677 (dE=-0.144E-02)
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:  96  -0.32074E+01    0.00000E+00   -0.32074E+01    86
+  FERMI_SHIFT =   0.247079613704600     
+Total rVV10 correction in eV:      9.6787902   426.1340754
+DAV:   1    -0.861626504309E+03    0.32000E-02   -0.77524E-01  6160   0.157E+00    0.182E-01
+SOL:  97  -0.32076E+01    0.00000E+00   -0.32076E+01    81
+  FERMI_SHIFT =   0.247099326191492     
+Total rVV10 correction in eV:      9.6787926   426.1346126
+RMM:   2    -0.861629594706E+03   -0.30904E-02   -0.25102E-02  6160   0.263E-01    0.987E-02
+SOL:  98  -0.32077E+01    0.00000E+00   -0.32077E+01    78
+  FERMI_SHIFT =   0.247079730873189     
+Total rVV10 correction in eV:      9.6787924   426.1345462
+RMM:   3    -0.861629469171E+03    0.12554E-03   -0.50898E-04  6024   0.397E-02    0.676E-02
+SOL:  99  -0.32080E+01    0.00000E+00   -0.32080E+01    82
+  FERMI_SHIFT =   0.247079730873233     
+Total rVV10 correction in eV:      9.6787838   426.1341514
+RMM:   4    -0.861629668963E+03   -0.19979E-03   -0.33512E-04  5991   0.371E-02    0.176E-02
+SOL: 100  -0.32080E+01    0.00000E+00   -0.32080E+01    74
+  FERMI_SHIFT =   0.247099300915499     
+Total rVV10 correction in eV:      9.6787770   426.1341443
+RMM:   5    -0.861629664543E+03    0.44200E-05   -0.27350E-05  4541   0.128E-02
+Total rVV10 correction in eV:      9.6787800   426.1339400
+SOL: 101  -0.32081E+01    0.00000E+00   -0.32081E+01    74
+  FERMI_SHIFT =   0.247099300915489     
+Total rVV10 correction in eV:      9.6787742   426.1341299
+  18 F= -.86162966E+03 E0= -.86162966E+03  d E =-.142647E-02  mag=     0.0000
+ curvature:   1.12 expect dE= 0.110E-01 dE for cont linesearch  0.481E-04
+ ZBRENT: bracketing found
+ ZBRENT: interpolating
+ opt :   0.4574  next Energy=  -861.629764 (dE=-0.153E-02)
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL: 102  -0.32079E+01    0.00000E+00   -0.32079E+01    83
+  FERMI_SHIFT =   0.247099189906148     
+Total rVV10 correction in eV:      9.6787986   426.1341307
+DAV:   1    -0.861628747290E+03    0.92167E-03   -0.25330E-01  6400   0.898E-01    0.103E-01
+SOL: 103  -0.32078E+01    0.00000E+00   -0.32078E+01    78
+  FERMI_SHIFT =   0.247079981265912     
+Total rVV10 correction in eV:      9.6788161   426.1343590
+RMM:   2    -0.861629703125E+03   -0.95584E-03   -0.80861E-03  6160   0.150E-01    0.562E-02
+SOL: 104  -0.32078E+01    0.00000E+00   -0.32078E+01    74
+  FERMI_SHIFT =   0.247079981265864     
+Total rVV10 correction in eV:      9.6788134   426.1343039
+RMM:   3    -0.861629674659E+03    0.28466E-04   -0.16546E-04  5504   0.239E-02    0.385E-02
+SOL: 105  -0.32079E+01    0.00000E+00   -0.32079E+01    77
+  FERMI_SHIFT =   0.247099159117959     
+Total rVV10 correction in eV:      9.6788088   426.1340448
+RMM:   4    -0.861629782762E+03   -0.10810E-03   -0.11738E-04  5328   0.238E-02    0.948E-03
+SOL: 106  -0.32080E+01    0.00000E+00   -0.32080E+01    69
+  FERMI_SHIFT =   0.247079981265925     
+Total rVV10 correction in eV:      9.6788126   426.1340334
+RMM:   5    -0.861629782609E+03    0.15282E-06   -0.13941E-05  4174   0.107E-02
+Total rVV10 correction in eV:      9.6788165   426.1339400
+SOL: 107  -0.32080E+01    0.00000E+00   -0.32080E+01    69
+  FERMI_SHIFT =   0.247079981265908     
+Total rVV10 correction in eV:      9.6788148   426.1340175
+  19 F= -.86162978E+03 E0= -.86162978E+03  d E =-.154453E-02  mag=     0.0000
+ curvature:  -1.39 expect dE=-0.766E-02 dE for cont linesearch -0.751E-06
+ trial: gam= 0.98535 g(F)=  0.550E-02 g(S)=  0.000E+00 ort = 0.194E-03 (trialstep = 0.282E+00)
+ search vector abs. value=  0.739E-01
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL: 108  -0.32087E+01    0.00000E+00   -0.32087E+01    87
+  FERMI_SHIFT =   0.247079741738748     
+Total rVV10 correction in eV:      9.6787507   426.1340218
+DAV:   1    -0.861625366381E+03    0.44164E-02   -0.13706E+00  6192   0.208E+00    0.238E-01
+SOL: 109  -0.32090E+01    0.00000E+00   -0.32090E+01    83
+  FERMI_SHIFT =   0.247079535154102     
+Total rVV10 correction in eV:      9.6787668   426.1347819
+RMM:   2    -0.861630564935E+03   -0.51986E-02   -0.43186E-02  6160   0.347E-01    0.127E-01
+SOL: 110  -0.32092E+01    0.00000E+00   -0.32092E+01    80
+  FERMI_SHIFT =   0.247079773504952     
+Total rVV10 correction in eV:      9.6787641   426.1346830
+RMM:   3    -0.861630371568E+03    0.19337E-03   -0.92916E-04  6214   0.514E-02    0.863E-02
+SOL: 111  -0.32093E+01    0.00000E+00   -0.32093E+01    83
+  FERMI_SHIFT =   0.247098944452649     
+Total rVV10 correction in eV:      9.6787495   426.1341757
+RMM:   4    -0.861630664885E+03   -0.29332E-03   -0.54566E-04  6160   0.471E-02    0.208E-02
+SOL: 112  -0.32093E+01    0.00000E+00   -0.32093E+01    76
+  FERMI_SHIFT =   0.247080059984275     
+Total rVV10 correction in eV:      9.6787405   426.1341719
+RMM:   5    -0.861630659627E+03    0.52584E-05   -0.27809E-05  4568   0.126E-02
+Total rVV10 correction in eV:      9.6787150   426.1339400
+SOL: 113  -0.32094E+01    0.00000E+00   -0.32094E+01    78
+  FERMI_SHIFT =   0.247098978290552     
+Total rVV10 correction in eV:      9.6787292   426.1341559
+  20 F= -.86163066E+03 E0= -.86163066E+03  d E =-.877017E-03  mag=     0.0000
+ trial-energy change:   -0.000877  1 .order   -0.000904   -0.001601   -0.000206
+ step:   0.3231(harm=  0.3231)  dis= 0.00178  next Energy=  -861.630701 (dE=-0.919E-03)
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL: 114  -0.32095E+01    0.00000E+00   -0.32095E+01    78
+  FERMI_SHIFT =   0.247099019475548     
+Total rVV10 correction in eV:      9.6787197   426.1341560
+DAV:   1    -0.861630554635E+03    0.11025E-03   -0.30324E-02  6704   0.310E-01    0.368E-02
+SOL: 115  -0.32096E+01    0.00000E+00   -0.32096E+01    76
+  FERMI_SHIFT =   0.247099019475593     
+Total rVV10 correction in eV:      9.6787186   426.1342192
+RMM:   2    -0.861630672482E+03   -0.11785E-03   -0.10229E-03  6152   0.547E-02    0.199E-02
+SOL: 116  -0.32097E+01    0.00000E+00   -0.32097E+01    74
+  FERMI_SHIFT =   0.247099019475539     
+Total rVV10 correction in eV:      9.6787172   426.1342118
+RMM:   3    -0.861630668424E+03    0.40578E-05   -0.26970E-05  4574   0.118E-02
+Total rVV10 correction in eV:      9.6787043   426.1339400
+SOL: 117  -0.32098E+01    0.00000E+00   -0.32098E+01    78
+  FERMI_SHIFT =   0.247080090317307     
+Total rVV10 correction in eV:      9.6787109   426.1341498
+  21 F= -.86163067E+03 E0= -.86163067E+03  d E =-.885815E-03  mag=     0.0000
+ curvature:  -2.10 expect dE=-0.369E-02 dE for cont linesearch -0.666E-06
+ trial: gam= 0.30503 g(F)=  0.176E-02 g(S)=  0.000E+00 ort =-0.153E-03 (trialstep = 0.290E+00)
+ search vector abs. value=  0.854E-02
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL: 118  -0.32101E+01    0.00000E+00   -0.32101E+01    84
+  FERMI_SHIFT =   0.247080059433190     
+Total rVV10 correction in eV:      9.6786778   426.1341503
+DAV:   1    -0.861630451180E+03    0.22130E-03   -0.15666E-01  6192   0.707E-01    0.847E-02
+SOL: 119  -0.32104E+01    0.00000E+00   -0.32104E+01    79
+  FERMI_SHIFT =   0.247099017893395     
+Total rVV10 correction in eV:      9.6786878   426.1343443
+RMM:   2    -0.861631047619E+03   -0.59644E-03   -0.49425E-03  6160   0.119E-01    0.449E-02
+SOL: 120  -0.32106E+01    0.00000E+00   -0.32106E+01    75
+  FERMI_SHIFT =   0.247099017893253     
+Total rVV10 correction in eV:      9.6786862   426.1343177
+RMM:   3    -0.861631039246E+03    0.83724E-05   -0.11640E-04  5339   0.206E-02    0.303E-02
+SOL: 121  -0.32109E+01    0.00000E+00   -0.32109E+01    78
+  FERMI_SHIFT =   0.247098880910671     
+Total rVV10 correction in eV:      9.6786811   426.1341438
+RMM:   4    -0.861631101774E+03   -0.62528E-04   -0.79832E-05  5176   0.212E-02    0.681E-03
+SOL: 122  -0.32110E+01    0.00000E+00   -0.32110E+01    70
+  FERMI_SHIFT =   0.247080123838631     
+Total rVV10 correction in eV:      9.6786810   426.1341346
+RMM:   5    -0.861631100267E+03    0.15069E-05   -0.16147E-05  4305   0.120E-02
+Total rVV10 correction in eV:      9.6786691   426.1339401
+SOL: 123  -0.32112E+01    0.00000E+00   -0.32112E+01    72
+  FERMI_SHIFT =   0.247080123838597     
+Total rVV10 correction in eV:      9.6786800   426.1341157
+  22 F= -.86163110E+03 E0= -.86163110E+03  d E =-.431843E-03  mag=    -0.0000
+ trial-energy change:   -0.000432  1 .order   -0.000394   -0.000496   -0.000292
+ step:   0.7057(harm=  0.7057)  dis= 0.00102  next Energy=  -861.631272 (dE=-0.604E-03)
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL: 124  -0.32116E+01    0.00000E+00   -0.32116E+01    86
+  FERMI_SHIFT =   0.247080078420413     
+Total rVV10 correction in eV:      9.6786325   426.1341166
+DAV:   1    -0.861629951947E+03    0.11498E-02   -0.32460E-01  6176   0.102E+00    0.121E-01
+SOL: 125  -0.32120E+01    0.00000E+00   -0.32120E+01    80
+  FERMI_SHIFT =   0.247100628087700     
+Total rVV10 correction in eV:      9.6786496   426.1344362
+RMM:   2    -0.861631227742E+03   -0.12758E-02   -0.10413E-02  6160   0.172E-01    0.657E-02
+SOL: 126  -0.32122E+01    0.00000E+00   -0.32122E+01    76
+  FERMI_SHIFT =   0.247077540237397     
+Total rVV10 correction in eV:      9.6786477   426.1344034
+RMM:   3    -0.861631187153E+03    0.40589E-04   -0.23039E-04  5812   0.277E-02    0.448E-02
+SOL: 127  -0.32127E+01    0.00000E+00   -0.32127E+01    80
+  FERMI_SHIFT =   0.247077589710463     
+Total rVV10 correction in eV:      9.6786403   426.1341510
+RMM:   4    -0.861631301229E+03   -0.11408E-03   -0.16372E-04  5804   0.281E-02    0.109E-02
+SOL: 128  -0.32128E+01    0.00000E+00   -0.32128E+01    71
+  FERMI_SHIFT =   0.247100562190982     
+Total rVV10 correction in eV:      9.6786397   426.1341429
+RMM:   5    -0.861631296019E+03    0.52101E-05   -0.20833E-05  4459   0.128E-02
+Total rVV10 correction in eV:      9.6786194   426.1339401
+SOL: 129  -0.32130E+01    0.00000E+00   -0.32130E+01    72
+  FERMI_SHIFT =   0.247077615550903     
+Total rVV10 correction in eV:      9.6786374   426.1341238
+  23 F= -.86163130E+03 E0= -.86163130E+03  d E =-.627595E-03  mag=    -0.0000
+ curvature:  -1.76 expect dE=-0.348E-02 dE for cont linesearch -0.257E-05
+ trial: gam= 1.18837 g(F)=  0.198E-02 g(S)=  0.000E+00 ort =-0.112E-03 (trialstep = 0.231E+00)
+ search vector abs. value=  0.138E-01
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL: 130  -0.32134E+01    0.00000E+00   -0.32134E+01    84
+  FERMI_SHIFT =   0.247077639817165     
+Total rVV10 correction in eV:      9.6786028   426.1341242
+DAV:   1    -0.861630930332E+03    0.37090E-03   -0.16749E-01  6272   0.730E-01    0.893E-02
+SOL: 131  -0.32134E+01    0.00000E+00   -0.32134E+01    79
+  FERMI_SHIFT =   0.247077639818309     
+Total rVV10 correction in eV:      9.6786134   426.1343117
+RMM:   2    -0.861631589396E+03   -0.65906E-03   -0.55302E-03  6160   0.125E-01    0.491E-02
+SOL: 132  -0.32134E+01    0.00000E+00   -0.32134E+01    76
+  FERMI_SHIFT =   0.247077639818585     
+Total rVV10 correction in eV:      9.6786130   426.1342657
+RMM:   3    -0.861631565353E+03    0.24043E-04   -0.12849E-04  5392   0.216E-02    0.333E-02
+SOL: 133  -0.32134E+01    0.00000E+00   -0.32134E+01    79
+  FERMI_SHIFT =   0.247100491110664     
+Total rVV10 correction in eV:      9.6786095   426.1340496
+RMM:   4    -0.861631648612E+03   -0.83259E-04   -0.10086E-04  5172   0.227E-02    0.823E-03
+SOL: 134  -0.32134E+01    0.00000E+00   -0.32134E+01    69
+  FERMI_SHIFT =   0.247077798057890     
+Total rVV10 correction in eV:      9.6786108   426.1340354
+RMM:   5    -0.861631645698E+03    0.29142E-05   -0.25386E-05  4543   0.141E-02
+Total rVV10 correction in eV:      9.6786070   426.1339401
+SOL: 135  -0.32135E+01    0.00000E+00   -0.32135E+01    69
+  FERMI_SHIFT =   0.247100504152556     
+Total rVV10 correction in eV:      9.6786111   426.1340197
+  24 F= -.86163165E+03 E0= -.86163165E+03  d E =-.349679E-03  mag=    -0.0000
+ trial-energy change:   -0.000350  1 .order   -0.000324   -0.000427   -0.000222
+ step:   0.4818(harm=  0.4818)  dis= 0.00086  next Energy=  -861.631740 (dE=-0.444E-03)
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL: 136  -0.32139E+01    0.00000E+00   -0.32139E+01    85
+  FERMI_SHIFT =   0.247100477196254     
+Total rVV10 correction in eV:      9.6785734   426.1340203
+DAV:   1    -0.861630949301E+03    0.69931E-03   -0.19627E-01  6224   0.790E-01    0.967E-02
+SOL: 137  -0.32139E+01    0.00000E+00   -0.32139E+01    79
+  FERMI_SHIFT =   0.247077911300797     
+Total rVV10 correction in eV:      9.6785876   426.1342553
+RMM:   2    -0.861631714875E+03   -0.76557E-03   -0.64534E-03  6160   0.135E-01    0.530E-02
+SOL: 138  -0.32138E+01    0.00000E+00   -0.32138E+01    76
+  FERMI_SHIFT =   0.247077911301058     
+Total rVV10 correction in eV:      9.6785885   426.1342112
+RMM:   3    -0.861631694305E+03    0.20569E-04   -0.14859E-04  5449   0.227E-02    0.359E-02
+SOL: 139  -0.32136E+01    0.00000E+00   -0.32136E+01    80
+  FERMI_SHIFT =   0.247080140931311     
+Total rVV10 correction in eV:      9.6785881   426.1339895
+RMM:   4    -0.861631778808E+03   -0.84503E-04   -0.11112E-04  5183   0.234E-02    0.872E-03
+SOL: 140  -0.32136E+01    0.00000E+00   -0.32136E+01    70
+  FERMI_SHIFT =   0.247098999129062     
+Total rVV10 correction in eV:      9.6785906   426.1339818
+RMM:   5    -0.861631775411E+03    0.33966E-05   -0.24208E-05  4512   0.136E-02
+Total rVV10 correction in eV:      9.6785967   426.1339401
+SOL: 141  -0.32136E+01    0.00000E+00   -0.32136E+01    70
+  FERMI_SHIFT =   0.247080078760040     
+Total rVV10 correction in eV:      9.6785923   426.1339740
+  25 F= -.86163178E+03 E0= -.86163178E+03  d E =-.479392E-03  mag=    -0.0000
+ curvature:  -1.80 expect dE=-0.410E-02 dE for cont linesearch -0.329E-07
+ trial: gam= 1.04195 g(F)=  0.228E-02 g(S)=  0.000E+00 ort =-0.159E-04 (trialstep = 0.225E+00)
+ search vector abs. value=  0.172E-01
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL: 142  -0.32139E+01    0.00000E+00   -0.32139E+01    85
+  FERMI_SHIFT =   0.247080150445647     
+Total rVV10 correction in eV:      9.6785494   426.1339749
+DAV:   1    -0.861631334177E+03    0.44463E-03   -0.20062E-01  6264   0.800E-01    0.936E-02
+SOL: 143  -0.32137E+01    0.00000E+00   -0.32137E+01    79
+  FERMI_SHIFT =   0.247100120332328     
+Total rVV10 correction in eV:      9.6785570   426.1342273
+RMM:   2    -0.861632078955E+03   -0.74478E-03   -0.64601E-03  6160   0.136E-01    0.511E-02
+SOL: 144  -0.32135E+01    0.00000E+00   -0.32135E+01    75
+  FERMI_SHIFT =   0.247078852845982     
+Total rVV10 correction in eV:      9.6785590   426.1341835
+RMM:   3    -0.861632065134E+03    0.13820E-04   -0.15583E-04  5545   0.230E-02    0.346E-02
+SOL: 145  -0.32130E+01    0.00000E+00   -0.32130E+01    79
+  FERMI_SHIFT =   0.247079269014285     
+Total rVV10 correction in eV:      9.6785603   426.1339835
+RMM:   4    -0.861632138625E+03   -0.73491E-04   -0.10808E-04  5236   0.235E-02    0.788E-03
+SOL: 146  -0.32129E+01    0.00000E+00   -0.32129E+01    71
+  FERMI_SHIFT =   0.247099771577516     
+Total rVV10 correction in eV:      9.6785614   426.1339840
+RMM:   5    -0.861632131608E+03    0.70168E-05   -0.19439E-05  4398   0.124E-02
+Total rVV10 correction in eV:      9.6785739   426.1339401
+SOL: 147  -0.32127E+01    0.00000E+00   -0.32127E+01    72
+  FERMI_SHIFT =   0.247099384047131     
+Total rVV10 correction in eV:      9.6785632   426.1339849
+  26 F= -.86163213E+03 E0= -.86163213E+03  d E =-.356197E-03  mag=    -0.0000
+ trial-energy change:   -0.000356  1 .order   -0.000355   -0.000510   -0.000200
+ step:   0.3707(harm=  0.3707)  dis= 0.00107  next Energy=  -861.632195 (dE=-0.420E-03)
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL: 148  -0.32130E+01    0.00000E+00   -0.32130E+01    83
+  FERMI_SHIFT =   0.247099344719703     
+Total rVV10 correction in eV:      9.6785355   426.1339854
+DAV:   1    -0.861631864854E+03    0.27377E-03   -0.83655E-02  6384   0.517E-01    0.605E-02
+SOL: 149  -0.32127E+01    0.00000E+00   -0.32127E+01    77
+  FERMI_SHIFT =   0.247079586783997     
+Total rVV10 correction in eV:      9.6785413   426.1341408
+RMM:   2    -0.861632172097E+03   -0.30724E-03   -0.27257E-03  6160   0.894E-02    0.332E-02
+SOL: 150  -0.32125E+01    0.00000E+00   -0.32125E+01    74
+  FERMI_SHIFT =   0.247079586784223     
+Total rVV10 correction in eV:      9.6785434   426.1341231
+RMM:   3    -0.861632163286E+03    0.88116E-05   -0.69987E-05  4972   0.170E-02
+Total rVV10 correction in eV:      9.6785629   426.1339401
+SOL: 151  -0.32120E+01    0.00000E+00   -0.32120E+01    78
+  FERMI_SHIFT =   0.247099072648207     
+Total rVV10 correction in eV:      9.6785465   426.1340208
+  27 F= -.86163216E+03 E0= -.86163216E+03  d E =-.387875E-03  mag=    -0.0000
+ curvature:  -1.41 expect dE=-0.158E-02 dE for cont linesearch -0.206E-05
+ trial: gam= 0.52829 g(F)=  0.112E-02 g(S)=  0.000E+00 ort =-0.159E-03 (trialstep = 0.254E+00)
+ search vector abs. value=  0.575E-02
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL: 152  -0.32121E+01    0.00000E+00   -0.32121E+01    81
+  FERMI_SHIFT =   0.247099019492051     
+Total rVV10 correction in eV:      9.6785171   426.1340212
+DAV:   1    -0.861632131077E+03    0.41020E-04   -0.80175E-02  6192   0.513E-01    0.593E-02
+SOL: 153  -0.32120E+01    0.00000E+00   -0.32120E+01    77
+  FERMI_SHIFT =   0.247099098460635     
+Total rVV10 correction in eV:      9.6785118   426.1341709
+RMM:   2    -0.861632400982E+03   -0.26990E-03   -0.24552E-03  6160   0.880E-02    0.310E-02
+SOL: 154  -0.32120E+01    0.00000E+00   -0.32120E+01    74
+  FERMI_SHIFT =   0.247099098460447     
+Total rVV10 correction in eV:      9.6785143   426.1341491
+RMM:   3    -0.861632390917E+03    0.10065E-04   -0.65836E-05  5147   0.179E-02    0.211E-02
+SOL: 155  -0.32117E+01    0.00000E+00   -0.32117E+01    77
+  FERMI_SHIFT =   0.000000000000000E+000
+Total rVV10 correction in eV:      9.6785166   426.1340268
+RMM:   4    -0.861632449067E+03   -0.58150E-04   -0.67166E-05  5088   0.209E-02    0.503E-03
+SOL: 156  -0.32116E+01    0.00000E+00   -0.32116E+01    68
+  FERMI_SHIFT =   0.247080115311676     
+Total rVV10 correction in eV:      9.6785156   426.1340261
+RMM:   5    -0.861632428042E+03    0.21025E-04   -0.37910E-05  4668   0.169E-02    0.283E-03
+SOL: 157  -0.32115E+01    0.00000E+00   -0.32115E+01    68
+  FERMI_SHIFT =   0.247080115311629     
+Total rVV10 correction in eV:      9.6785159   426.1340236
+RMM:   6    -0.861632426024E+03    0.20182E-05   -0.13680E-05  4287   0.100E-02
+Total rVV10 correction in eV:      9.6785265   426.1339401
+SOL: 158  -0.32114E+01    0.00000E+00   -0.32114E+01    66
+  FERMI_SHIFT =   0.247080115311615     
+Total rVV10 correction in eV:      9.6785174   426.1340209
+  28 F= -.86163243E+03 E0= -.86163243E+03  d E =-.262738E-03  mag=    -0.0000
+ trial-energy change:   -0.000263  1 .order   -0.000212   -0.000264   -0.000160
+ step:   0.3355(harm=  0.6471)  dis= 0.00087  next Energy=  -861.632453 (dE=-0.290E-03)
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL: 159  -0.32114E+01    0.00000E+00   -0.32114E+01    76
+  FERMI_SHIFT =   0.247080132335552     
+Total rVV10 correction in eV:      9.6785080   426.1340210
+DAV:   1    -0.861632438647E+03   -0.10604E-04   -0.82939E-03  6184   0.165E-01    0.186E-02
+SOL: 160  -0.32114E+01    0.00000E+00   -0.32114E+01    72
+  FERMI_SHIFT =   0.000000000000000E+000
+Total rVV10 correction in eV:      9.6785072   426.1340549
+RMM:   2    -0.861632468651E+03   -0.30004E-04   -0.26580E-04  5660   0.297E-02    0.102E-02
+SOL: 161  -0.32113E+01    0.00000E+00   -0.32113E+01    69
+  FERMI_SHIFT =   0.000000000000000E+000
+Total rVV10 correction in eV:      9.6785088   426.1340494
+RMM:   3    -0.861632468640E+03    0.10878E-07   -0.91709E-06  4110   0.817E-03
+Total rVV10 correction in eV:      9.6785158   426.1339401
+SOL: 162  -0.32112E+01    0.00000E+00   -0.32112E+01    73
+  FERMI_SHIFT =   0.247080197476443     
+Total rVV10 correction in eV:      9.6785113   426.1340104
+  29 F= -.86163247E+03 E0= -.86163247E+03  d E =-.305354E-03  mag=    -0.0000
+ curvature:  -0.66 expect dE=-0.269E-03 dE for cont linesearch -0.245E-04
+ ZBRENT: increasing intervall
+ opt :   0.4979  next Energy=  -861.632516 (dE=-0.352E-03)
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL: 163  -0.32112E+01    0.00000E+00   -0.32112E+01    79
+  FERMI_SHIFT =   0.247080231566162     
+Total rVV10 correction in eV:      9.6784925   426.1340106
+DAV:   1    -0.861632403995E+03    0.64656E-04   -0.32814E-02  6160   0.328E-01    0.375E-02
+SOL: 164  -0.32112E+01    0.00000E+00   -0.32112E+01    75
+  FERMI_SHIFT =   0.247098772717724     
+Total rVV10 correction in eV:      9.6784876   426.1340981
+RMM:   2    -0.861632516714E+03   -0.11272E-03   -0.10170E-03  6160   0.564E-02    0.199E-02
+SOL: 165  -0.32112E+01    0.00000E+00   -0.32112E+01    72
+  FERMI_SHIFT =   0.247080349254027     
+Total rVV10 correction in eV:      9.6784890   426.1340864
+RMM:   3    -0.861632515537E+03    0.11766E-05   -0.26115E-05  4561   0.118E-02
+Total rVV10 correction in eV:      9.6784944   426.1339401
+SOL: 166  -0.32111E+01    0.00000E+00   -0.32111E+01    75
+  FERMI_SHIFT =   0.247098806610371     
+Total rVV10 correction in eV:      9.6784903   426.1340079
+  30 F= -.86163252E+03 E0= -.86163252E+03  d E =-.352252E-03  mag=    -0.0000
+ curvature:  -1.28 expect dE=-0.587E-03 dE for cont linesearch -0.316E-05
+ ZBRENT: extrapolating
+ opt :   0.5547  next Energy=  -861.632519 (dE=-0.356E-03)
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL: 167  -0.32111E+01    0.00000E+00   -0.32111E+01    74
+  FERMI_SHIFT =   0.247098794727156     
+Total rVV10 correction in eV:      9.6784837   426.1340080
+DAV:   1    -0.861632520656E+03   -0.39418E-05   -0.38980E-03  6192   0.113E-01    0.138E-02
+SOL: 168  -0.32111E+01    0.00000E+00   -0.32111E+01    71
+  FERMI_SHIFT =   0.247098760694530     
+Total rVV10 correction in eV:      9.6784806   426.1340305
+RMM:   2    -0.861632531344E+03   -0.10688E-04   -0.11961E-04  4975   0.215E-02    0.665E-03
+SOL: 169  -0.32110E+01    0.00000E+00   -0.32110E+01    68
+  FERMI_SHIFT =   0.247080361344137     
+Total rVV10 correction in eV:      9.6784812   426.1340252
+RMM:   3    -0.861632531492E+03   -0.14806E-06   -0.91244E-06  4090   0.875E-03
+Total rVV10 correction in eV:      9.6784863   426.1339401
+SOL: 170  -0.32109E+01    0.00000E+00   -0.32109E+01    71
+  FERMI_SHIFT =   0.247080243371661     
+Total rVV10 correction in eV:      9.6784829   426.1340027
+  31 F= -.86163253E+03 E0= -.86163253E+03  d E =-.368206E-03  mag=     0.0000
+ curvature:  -1.37 expect dE=-0.757E-03 dE for cont linesearch -0.275E-06
+ trial: gam= 0.45559 g(F)=  0.553E-03 g(S)=  0.000E+00 ort = 0.340E-04 (trialstep = 0.314E+00)
+ search vector abs. value=  0.178E-02
+ bond charge predicted
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL: 171  -0.32110E+01    0.00000E+00   -0.32110E+01    80
+  FERMI_SHIFT =   0.247080229609319     
+Total rVV10 correction in eV:      9.6784682   426.1340030
+DAV:   1    -0.861632501488E+03    0.29856E-04   -0.43773E-02  6160   0.386E-01    0.409E-02
+SOL: 172  -0.32109E+01    0.00000E+00   -0.32109E+01    76
+  FERMI_SHIFT =   0.000000000000000E+000
+Total rVV10 correction in eV:      9.6784675   426.1341087
+RMM:   2    -0.861632663650E+03   -0.16216E-03   -0.13828E-03  6160   0.669E-02    0.225E-02
+SOL: 173  -0.32109E+01    0.00000E+00   -0.32109E+01    73
+  FERMI_SHIFT =   0.000000000000000E+000
+Total rVV10 correction in eV:      9.6784700   426.1340959
+RMM:   3    -0.861632657620E+03    0.60299E-05   -0.34003E-05  4640   0.135E-02
+Total rVV10 correction in eV:      9.6784732   426.1339401
+SOL: 174  -0.32107E+01    0.00000E+00   -0.32107E+01    76
+  FERMI_SHIFT =   0.247099031432584     
+Total rVV10 correction in eV:      9.6784713   426.1339918
+  32 F= -.86163266E+03 E0= -.86163266E+03  d E =-.126128E-03  mag=    -0.0000
+ trial-energy change:   -0.000126  1 .order   -0.000126   -0.000179   -0.000074
+ step:   0.5354(harm=  0.5354)  dis= 0.00099  next Energy=  -861.632684 (dE=-0.152E-03)
+ reached required accuracy - stopping structural energy minimisation
+ writing wavefunctions
+SOL: 175  -0.32107E+01    0.00000E+00   -0.32107E+01     0
+  FERMI_SHIFT =   0.247099031432584     
+TACC:  Shutdown complete. Exiting. 
+Job finished on c495-024.stampede2.tacc.utexas.edu at Fri Aug  6 05:22:57 CDT 2021
+/tmp/slurmd/job8231619/slurm_script: line 15: /home1/07906/yc116: Is a directory
