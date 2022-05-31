@@ -1,0 +1,96 @@
+Job started on c504-101.stampede2.tacc.utexas.edu at Mon Dec  6 15:49:48 CST 2021
+TACC:  Starting up job 8867053 
+TACC:  Starting parallel tasks... 
+ running on   96 total cores
+ distrk:  each k-point on   96 cores,    1 groups
+ distr:  one band on   24 cores,    4 groups
+ using from now: INCAR     
+ vasp.5.4.4.18Apr17-6-g9f103f2a35 (build May 01 2020 14:57:12) complex          
+  
+ POSCAR found type information on POSCAR  B  N  C  F  O 
+ POSCAR found :  5 types and      85 ions
+ scaLAPACK will be used
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|           W    W    AA    RRRRR   N    N  II  N    N   GGGG   !!!           |
+|           W    W   A  A   R    R  NN   N  II  NN   N  G    G  !!!           |
+|           W    W  A    A  R    R  N N  N  II  N N  N  G       !!!           |
+|           W WW W  AAAAAA  RRRRR   N  N N  II  N  N N  G  GGG   !            |
+|           WW  WW  A    A  R   R   N   NN  II  N   NN  G    G                |
+|           W    W  A    A  R    R  N    N  II  N    N   GGGG   !!!           |
+|                                                                             |
+|      For optimal performance we recommend to set                            |
+|        NCORE= 4 - approx SQRT( number of cores)                             |
+|      NCORE specifies how many cores store one orbital (NPAR=cpu/NCORE).     |
+|      This setting can  greatly improve the performance of VASP for DFT.     |
+|      The default,   NCORE=1            might be grossly inefficient         |
+|      on modern multi-core architectures or massively parallel machines.     |
+|      Do your own testing !!!!                                               |
+|      Unfortunately you need to use the default for GW and RPA calculations. |
+|      (for HF NCORE is supported but not extensively tested yet)             |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+
+ ----------------------------------------------------------------------------- 
+|                                                                             |
+|  ADVICE TO THIS USER RUNNING 'VASP/VAMP'   (HEAR YOUR MASTER'S VOICE ...):  |
+|                                                                             |
+|      You have switched on vdW-DFT.                                          |
+|      This routine was written and supplied by Jiri Klimes.                  |
+|      We recommed that you carefully read and cite the following             |
+|      publication                                                            |
+|      J. Klimes, D.R. Bowler, A. Michelides                                  |
+|        J. Phys.: Cond Matt. 22 022201 (2010)                                |
+|      J. Klimes, D.R. Bowler, A. Michelides                                  |
+|        Phys. Rev. B. 83, 195131 (2011)                                      |
+|      and references therein.                                                |
+|                                                                             |
+ ----------------------------------------------------------------------------- 
+
+ LDA part: xc-table for Pade appr. of Perdew
+ found WAVECAR, reading the header
+ WAVECAR: different cutoff or change in lattice found
+ POSCAR, INCAR and KPOINTS ok, starting setup
+ FFT: planning ...
+ reading WAVECAR
+ the WAVECAR file was read successfully
+ initial charge from wavefunction
+ entering main loop
+       N       E                     dE             d eps       ncg     rms          rms(c)
+SOL:   1  -0.29937E+01    0.00000E+00   -0.29937E+01   117
+  FERMI_SHIFT =   0.224028189510771     
+Total rVV10 correction in eV:      8.3958786   371.9912080
+DAV:   1    -0.798668528687E+03   -0.79867E+03   -0.60324E-03  5568   0.304E-01    0.704E-02
+SOL:   2  -0.29937E+01    0.00000E+00   -0.29937E+01    76
+  FERMI_SHIFT =   0.224047453904498     
+Total rVV10 correction in eV:      8.3959605   371.9913477
+RMM:   2    -0.798668498875E+03    0.29811E-04   -0.28631E-04  5440   0.347E-02    0.301E-02
+SOL:   3  -0.29937E+01    0.00000E+00   -0.29937E+01    72
+  FERMI_SHIFT =   0.224028367473658     
+Total rVV10 correction in eV:      8.3959717   371.9912850
+RMM:   3    -0.798668531573E+03   -0.32697E-04   -0.86584E-05  5340   0.172E-02    0.155E-02
+SOL:   4  -0.29936E+01    0.00000E+00   -0.29936E+01    72
+  FERMI_SHIFT =   0.224028621611012     
+Total rVV10 correction in eV:      8.3959360   371.9912231
+RMM:   4    -0.798668518214E+03    0.13359E-04   -0.18039E-05  3796   0.113E-02    0.572E-03
+SOL:   5  -0.29936E+01    0.00000E+00   -0.29936E+01    65
+  FERMI_SHIFT =   0.224046784497765     
+Total rVV10 correction in eV:      8.3959351   371.9912230
+RMM:   5    -0.798668522457E+03   -0.42433E-05   -0.52237E-06  3616   0.743E-03
+Total rVV10 correction in eV:      8.3959391   371.9912080
+SOL:   6  -0.29936E+01    0.00000E+00   -0.29936E+01    63
+  FERMI_SHIFT =   0.224028621611098     
+Total rVV10 correction in eV:      8.3959369   371.9912174
+   1 F= -.79866852E+03 E0= -.79866852E+03  d E =-.798669E+03  mag=     0.0000
+ curvature:   0.00 expect dE= 0.000E+00 dE for cont linesearch  0.000E+00
+ trial: gam= 0.00000 g(F)=  0.122E-02 g(S)=  0.000E+00 ort = 0.000E+00 (trialstep = 0.100E+01)
+ search vector abs. value=  0.122E-02
+ reached required accuracy - stopping structural energy minimisation
+ writing wavefunctions
+SOL:   7  -0.29936E+01    0.00000E+00   -0.29936E+01     0
+  FERMI_SHIFT =   0.224028621611094     
+TACC:  Shutdown complete. Exiting. 
+Job finished on c504-101.stampede2.tacc.utexas.edu at Mon Dec  6 16:27:01 CST 2021
+/tmp/slurmd/job8867053/slurm_script: line 15: /home1/07906/yc116: Is a directory
