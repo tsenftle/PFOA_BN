@@ -1,0 +1,43 @@
+echo
+start mol 
+title "mol"
+
+geometry nocenter noautosym noautoz
+  load mol.xyz
+end
+
+constraints
+  fix atom 33:48
+end
+
+charge 0
+basis noprint
+  * library aug-cc-pVDZ
+end
+
+
+
+#ET products:
+
+scf 
+   doublet; uhf; maxiter 200; vectors input fragment hBN_q0.movecs PFCA_q0.movecs output product.movecs
+end
+
+task scf
+
+
+#ET reactants:
+scf
+    doublet; uhf; maxiter 200; vectors input fragment hBN_q1.movecs PFCA_q_1.movecs output  reactant.movecs
+end
+task scf
+
+et 
+   vectors reactants reactant.movecs
+   vectors products product.movecs
+end
+
+
+task scf et
+
+
